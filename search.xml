@@ -20,6 +20,12 @@
     <title><![CDATA[Hexo+GitHub搭建博客]]></title>
     <url>%2F2019%2F03%2F11%2FHexo-Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%2F</url>
     <content type="text"><![CDATA[hexo+GitHub搭建博客 1.下载并安装Git,Node.jsGit(官网)Node.js（官网）下载就不说了。安装就傻瓜式安装，直接默认就行了！ 2.配置环境变量计算机---属性---高级系统设置---环境变量----打开用户变量---点击编辑---输入变量名和将node.js安装路径粘贴到变量值中---确定完成环境配置 3.新建空博客文件夹安装hexo，在空文件夹中点击鼠标右键点击Git bash here进入命令行,输入以下命令：1$ npm install hexo-cli -g 1$ hexo init blog 1$ cd blog 1$ npm install 1$ hexo g 1$ hexo s 界面上会有一个类似http://localhost:4000的网站,界面如下： 4.注册github账号github 5.创建一个仓库#####注： GithubPages的Repository名字是特定的，比如我Github账号是abc，那么我Github Pages Repository名字就是abc.github.io。 6.设置github pages点击进入你刚刚创建好的仓库，接着点击settings，进入仓库管理，选择主题，和选择来源为master，试试在浏览器的地址栏输入”你github的用户名.github.io”吧！ 7.SSH授权1$ ssh-keygen -t rsa 接着3次回车，这样就会在C盘用户目录下生成id_rsa和id_rsa.pub这两个文件打开id_rsa.pub，复制其中的全部内容，点击github头像，再点击setting选择SSH and GPG keys，再点击NEW SSH key，将刚才复制的内容粘贴到其中 8.在_config.yml中添加复制clone or download下的git地址1234deploy: type: git repository: git@github.com:github用户名/github用户名.github.io.git branch: master 9.回到命令窗口123$ npm install hexo-deployer-git --save$ hexo g$ hexo d 或者12$ npm install hexo-deployer-git --save$ hexo g -d 最后访问https://yourname.github.io例如：博客搭建初步完成]]></content>
+      <categories>
+        <category>software</category>
+      </categories>
+      <tags>
+        <tag>心得</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
