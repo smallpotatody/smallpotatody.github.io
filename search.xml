@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[SecureCRT的安装与破解]]></title>
+    <url>%2F2019%2F03%2F15%2FSecureCRT%2F</url>
+    <content type="text"><![CDATA[1.下载securecrtsecurecrt下载地址: 百度网盘 提取码: fbmi 复制这段内容后打开百度网盘手机App，操作更方便哦!软件资源取自ZD423,也可以去ZD423去下载!ZD423官网找到自己要下的对应的版本下载 2. 安装 将下载下来的软件解压，然后安装scrt_sfx833-x64 选择complete 添加桌面快捷方式 安装完成 安装完成后，可以看到桌面已经有了快捷方式，先别忙打开软件 将Crack文件夹或者keygen.exe复制到SecureCRT安装路径：c &gt; program &gt; VanDyke Software &gt; Clients 以管理员身份运行keygen.exe 点击Patch，如果出现We are sorry ……………,那么就关掉重新点击注册机上的Generate按钮更换注册码，直到成功出现Path has been done successfully!字样代表成功了。 注意： 点击确定按钮后会再弹出一个界面选择LicenseHelper.exe,然后会出现同样成功的字样。 再点击桌面上的快捷方式就会弹出 一个服务器连着电脑的图形界面就成功了。3.SecureCRT的使用 在连接之前，你与要到你的Linux系统上去开启sshd服务在终端输入sudo apt-get install openssh-server 终端上显示:ssh start/running, process 2425就表示安装好了。 在终端上输入命令ifconfig 找到你虚拟机的ip，然后将IP复制到以下界面中的Hostname 然后连接进行测试，由于我使用的是ubuntu 找到SecureCRT的设置及Session Options进行设置 文件传输Zmodem先在终端上输入命令进行安装：sudo apt-get install lrzsz 从windows上传文件至linux：rz 从linux上传文件至windows：sz filename,然后在windows上的Downloads]]></content>
+      <categories>
+        <category>software</category>
+      </categories>
+      <tags>
+        <tag>软件安装</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown语法的介绍]]></title>
+    <url>%2F2019%2F03%2F11%2F2%2F</url>
+    <content type="text"><![CDATA[怎样在网站上书写我们的第一篇博客吧 一、创建文章在站点文件夹中打开 git bash，输入如下命令创建文章，其中 name 为文章的标题1$ hexo new &quot;name&quot; 当输入命令后，就会在 source/_post 文件夹下创建一个文件，命名为：name.md这个文件就是将要发布到网站上的原始文件，用于记录文章内容 二、编写文章（基于 Markdown）1、Markdown 简介Markdown 是一种可以使用普通文本编辑器编写的 标记语言，通过简单的 标记语法，它可以使普通文本内容具有一定的格式基于 Markdown 语法的简洁性，它已经成为目前世界上最流行的用于书写博客的语言 2、Markdown 语法Typora-Markdown编辑器简单而强大，支持原生的语法，也支持对应的快捷键，还可以 实时预览 Typora 的下载地址：https://www.typora.io/ 三、常用的 Markdown 语法1.标题Markdown 语法： #一级标题 ##二级标题 ###三级标题 ####四级标题 #####五级标题 ######六级标题Typora 快捷键：Ctrl+1：一级标题Ctrl+2：二级标题Ctrl+3：三级标题Ctrl+4：四级标题Ctrl+5：五级标题Ctrl+6 ：六级标题Ctrl+0：段落 2.粗体、斜体、删除线和下划线Markdown 语法：1234*斜体***粗体*****加粗斜体***~~删除线~~ Typora 快捷键：Ctrl+I：斜体Ctrl+B：粗体Ctrl+U：下划线Alt+Shift+5：删除线 3.引用块Markdown 语法：12&gt; 文字引用Typora 快捷键： Ctrl+Shift+Q 4.代码块Markdown 语法：1`行内代码` 1``` 多行代码 ``` Typora 快捷键： 行内代码：Ctrl+Shift+` 多行代码：Ctrl+Shift+K 5.公式块Markdown 语法：123$$ 数学公式$$ Typora 快捷键： Ctrl+Shift+M 6.分割线Markdown 语法：12345方法一:---方法二:+++方法三：*** 7.列表Markdown 语法：1234567.有序列表项*无序列表项+无序列表项-无序列表项 Typora 快捷键： 有序列表项：Ctrl+Shift+[ 无序列表项：Ctrl+Shift+] 8.表格Markdown 语法：1234表头1|表头2-|-|-内容11|内容12内容21|内容22 Typora 快捷键： Ctrl+T 9.超链接Markdown语法：12345方法一[](链接地址 &quot;链接描述&quot;)如[](https://www.example.com/ &quot;示例链接&quot;)方法二：&lt;链接地址&gt;如：&lt;https://www.example.com/&gt; Typora快捷键： Ctrl+K ##10.图片Markdown语法：12![图片文字](图片地址 &quot;图片描述&quot;)如：![示例图片](https://www.example.com/example.PNG &quot;示例图片&quot;) Typora快捷键： Ctrl+Shift+I 注: 安装插件 npm install hexo-asset-image –save 将 站点配置文件 中的 post_asset_folde: true 这样，当使用 hexo new name文章时，将同时在 source/_post 文件夹中生成一个 name文件夹，我们只需将图片放进此文件夹中，然后在文章中通过 Markdown语法写入如：在资源文件夹（就是那个与 name文件夹）中添加图片 example.PNG，则可以在对应的文章中使用语句 ![示例图片](title/example.PNG &quot;示例图片&quot;)添加图片 四、高级设置1.模板设置当我们使用命令 hexo new “title” 创建文章时，Hexo 会根据 /scaffolds/post.md 对新文章进行初始化换言之，/scaffolds/post.md 就是新文章的 模板，所以我们可以修改它来适应自己的写作习惯一个简单的示例如下：title: Markdown语法的介绍date: 1552301438923tags:categories: 2.头部设置在每篇利用 Hexo 创建的文章的开头，都会有对文章进行说明的文字，叫做 文章头部文章的头部除了可以设置文章标题、发布日期等基础信息外，还可以为文章添加标签、分类等一个简单的示例如下：title: Titledate: YYYY-MM-DD HH:MM:SStags: [tag1, tag2, …]categories: category注意：属性和属性值之间必须有一个空格，否则会解析错误 3.首页显示在利用 Hexo 框架搭建的博客网站中，首页会显示文章的内容，且默认显示文章的全部内容如果当文章太长的时候就会显得十分冗余，所以我们有必要对其进行精简这时，我们只需在文章中使用 标志即可，表示只会显示标志前面的内容 五、部署发布1$ hexo g -d 建议：在使用 hexo g 部署之后，可以先使用 hexo s 运行本地站点，然后在浏览器输入地址 http://lacolhost:4000/ 查看运行结果，检查无误后再使用 hexo d 发布]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo+GitHub搭建博客]]></title>
+    <url>%2F2019%2F03%2F11%2FHexo-Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[hexo+GitHub搭建博客 1.下载并安装Git,Node.jsGit(官网)Node.js（官网）下载就不说了。安装就傻瓜式安装，直接默认就行了！ 2.配置环境变量计算机---属性---高级系统设置---环境变量----打开用户变量---点击编辑---输入变量名和将node.js安装路径粘贴到变量值中---确定完成环境配置 3.新建空博客文件夹安装hexo，在空文件夹中点击鼠标右键点击Git bash here进入命令行,输入以下命令：1$ npm install hexo-cli -g 1$ hexo init blog 1$ cd blog 1$ npm install 1$ hexo g 1$ hexo s 界面上会有一个类似http://localhost:4000的网站,界面如下： 4.注册github账号github 5.创建一个仓库#####注： GithubPages的Repository名字是特定的，比如我Github账号是abc，那么我Github Pages Repository名字就是abc.github.io。 6.设置github pages点击进入你刚刚创建好的仓库，接着点击settings，进入仓库管理，选择主题，和选择来源为master，试试在浏览器的地址栏输入”你github的用户名.github.io”吧！ 7.SSH授权1$ ssh-keygen -t rsa 接着3次回车，这样就会在C盘用户目录下生成id_rsa和id_rsa.pub这两个文件打开id_rsa.pub，复制其中的全部内容，点击github头像，再点击setting选择SSH and GPG keys，再点击NEW SSH key，将刚才复制的内容粘贴到其中 8.在_config.yml中添加复制clone or download下的git地址1234deploy: type: git repository: git@github.com:github用户名/github用户名.github.io.git branch: master 9.回到命令窗口123$ npm install hexo-deployer-git --save$ hexo g$ hexo d 或者12$ npm install hexo-deployer-git --save$ hexo g -d 最后访问https://yourname.github.io例如：博客搭建初步完成]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F03%2F10%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
