@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hexo源码上传到Github上同一仓库]]></title>
+    <url>%2F2019%2F04%2F01%2FHexo%E6%BA%90%E7%A0%81%E4%B8%8A%E4%BC%A0%E5%88%B0Github%E4%B8%8A%E5%90%8C%E4%B8%80%E4%BB%93%E5%BA%93%2F</url>
+    <content type="text"><![CDATA[在使用 Hexo 来写博客的时候，我们想在其他电脑操作上很难，那么我们如果将其放在GitHub上托管，那么就没有那么多麻烦。我们将博客搭建在 GitHub 上后，当我们使用 hexo g -d 部署到 GitHub 上以及网页上，其实没有把我们编写的 xxx.md 原博客文档上传到Github，而只是生成一些博客需要的静态的页面。但我们万事都想安全一点，假设我们硬盘坏了，数据无法恢复，那么我们的博客源文档也会不见，所以最好我们是把源代码也托管到 GitHub 上， 这个也有一个好处就是你在其他电脑上也可以同步编写博客。 你如果想把源代码上传至GitHub，那么可以上传至GitHub上的仓库，但是我们在建立博客时就已经创建了一个仓库，再创仓库就不方便管理与规划。本文说的前提是你已经建立了github pages——就是利用github搭建了个人博客。 在你的仓库下创建分支 更改默认分支 创建本地分支目录在本地磁盘新建一个文件夹（文件夹名随便只要你自己能找到和辨别出就行）用作放即将上传至仓库新建分支sourse（我建立的分支，即你自己建立分支的名字），进入文件夹，鼠标右键选择Git Bash Here 将你要上传的源代码文件和你想上传的文件粘贴到刚才创建的文件夹。 添加项目我在这里添加了几张图片和hello-world.md文件 执行命令进入上面的Git Bash Here里面输入以下命令 你可以直接克隆你的项目到目录下。 git clone https://github.com/yourname/yourname.github.io.git 然后将文件移动到新建的yourname.github.io（就是执行上面命令后产生的）文件夹里面，再在这里面打开Git Bash Here，再输入以下命令 12345678910git remote add origin https://github.com/yourname/yourname.github.io.git如果出错提示你已经有了origin可以输入以下命令git remote rm origingit add .git commit -m &quot;your description&quot;git push origin sourse如果出错就可以输入以下命令git pull origin sourse或者直接强行输入git push origin sourse -f 配置确认你的 _config.yml 配置是提交到 master 分支 1234deploy: type: git repository: git@github.com:yourname/yourname.github.io.git branch: master 结果 通过结果可以看出来在sourse文件夹下面的yourname.github.io文件夹里面的内容军上传至Github上yourname仓库的sourse分支下。 新增文件上传方法将添加文件放入到本地仓库分支里面也就是sourse文件夹下面的yourname.github.io文件夹下 然后在里面进行Git Bash Here输入以下命令 add .123git add .git commit -m &quot;your description&quot;git push origin sourse -f 我相信大家已经配置好了博客，如果没配置可以参考我的另一篇Hexo+GitHub搭建博客 文件参考：保存 Hexo 博客源码到 GitHub]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[CSS部分]]></title>
     <url>%2F2019%2F04%2F01%2FCSS%E9%83%A8%E5%88%86%2F</url>
     <content type="text"><![CDATA[1.HTML&lt;!DOCTYPE&gt;声明标签&lt;!doctype&gt;声明必须是HTML文档是的第一行，位于标签之前。&lt;!doctype&gt;声明不是HTML标签；它是指示web浏览器关于页面使用的哪个HTML版本进行编写的指令。 HTML5为&lt;!doctype html&gt;,&lt;meta charset=&quot;utf-8&quot;&gt; 在html4.01中单标记必须闭合，单属性必须必须添加属性值，标记和属性必须使用小写，属性的属性值必须使用””。 2.使用CSS样式的方式a.内链样式表： 12&lt;!--内链样式表--&gt; &lt;body style=&quot;background-color:green; margin:0; padding:0;&quot; &gt; b.嵌入式样式表： 需要放在&lt;head&gt;&lt;/head&gt;中 123456&lt;!--嵌入式样式表--&gt; &lt;style type=&quot;text/css&quot;&gt; p&#123; background-color:yellow; color:black; &#125; p是&lt;p&gt;&lt;/p&gt;标记，如果是&lt;h1&gt;&lt;/h1&gt;标记就为： 123456&lt;!--嵌入式样式表--&gt; &lt;style type=&quot;text/css&quot;&gt; h1&#123; background-color:yellow; color:black; &#125; c.引入式样式表： 12&lt;!--引入式样式表--&gt; &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; herf=&quot;style.css&quot;&gt; style.css为新建的css文件，表示要设置属性内容： 1234body&#123; background-color:green; color:yellow; &#125; 3.定义样式表&lt;h1&gt;&lt;h1&gt;,h1{属性:属性值; 属性:属性值:},h1为选择器，定义那个标记中的内容执行其中的样式，一个选择器可以控制若干个样式属性，属性之间用英语“;”隔开。 a.Class定义： &lt;p class=&quot;p&quot;&gt;&lt;/p&gt;,class定义是以“.”开始 p{属性1:属性值; 属性2:属性值;} 12345 .p&#123;color:green;font-size:10px&#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p class=&quot;p&quot;&gt;小土豆很强&lt;/p&gt; b.id定义： &lt;p id=&quot;pp&quot;&gt;&lt;/p&gt;,id定义是#开始的。#pp{属性1:属性值1; 属性2:属性值2;},id只能出现一次。 12345#PP&#123;background-color:green; color:blue; font-size:20px;&#125;&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;p id=&quot;pp&quot;&gt;...&lt;/p&gt; 优先级为id&gt;class&gt;html，如 123p&#123;......&#125;.p&#123;......&#125;#pp&#123;......&#125; 不管顺序如何，结果都为#pp{……}中的内容设置。 同级时选择离元属最近一个的，如 12#pp&#123;color:red&#125;#pp&#123;color:white&#125; 则执行颜色为白色的。 组合选择器（同时控制多个元素） h1,h2,h3{font-size:20px; color:red;},选择器组合可以使用“.”隔开 超链接： 1234a:link&#123;color:red&#125;; 正常连接的样式a:hover&#123;color:yellow&#125;; 鼠标放上去的样式a:active&#123;color:blue&#125;; 选择链接时的样式a:visited&#123;color:yellow&#125;; 已经访问过的链接的样式 4.CSS常见属性a.颜色属性： color属性定义文本的颜色，可以有以下格式： color:green color:#ff6600或color:f60 ff(red)66(green)00(blue)]]></content>
@@ -37,17 +48,6 @@
     <title><![CDATA[Hello World]]></title>
     <url>%2F2019%2F03%2F28%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Hexo源码上传到Github上同一仓库]]></title>
-    <url>%2F2019%2F03%2F28%2FHexo%E6%BA%90%E7%A0%81%E4%B8%8A%E4%BC%A0%E5%88%B0Github%E4%B8%8A%E5%90%8C%E4%B8%80%E4%BB%93%E5%BA%93%2F</url>
-    <content type="text"><![CDATA[在使用 Hexo 来写博客的时候，我们想在其他电脑操作上很难，那么我们如果将其放在GitHub上托管，那么就没有那么多麻烦。我们将博客搭建在 GitHub 上后，当我们使用 hexo g -d 部署到 GitHub 上以及网页上，其实没有把我们编写的 xxx.md 原博客文档上传到Github，而只是生成一些博客需要的静态的页面。但我们万事都想安全一点，假设我们硬盘坏了，数据无法恢复，那么我们的博客源文档也会不见，所以最好我们是把源代码也托管到 GitHub 上， 这个也有一个好处就是你在其他电脑上也可以同步编写博客。 你如果想把源代码上传至GitHub，那么可以上传至GitHub上的仓库，但是我们在建立博客时就已经创建了一个仓库，再创仓库就不方便管理与规划。本文说的前提是你已经建立了github pages——就是利用github搭建了个人博客。 在你的仓库下创建分支 更改默认分支 创建本地分支目录在本地磁盘新建一个文件夹（文件夹名随便只要你自己能找到和辨别出就行）用作放即将上传至仓库新建分支sourse（我建立的分支，即你自己建立分支的名字），进入文件夹，鼠标右键选择Git Bash Here 将你要上传的源代码文件和你想上传的文件粘贴到刚才创建的文件夹。 添加项目我在这里添加了几张图片和hello-world.md文件 执行命令进入上面的Git Bash Here里面输入以下命令 你可以直接克隆你的项目到目录下。 git clone https://github.com/yourname/yourname.github.io.git 然后将文件移动到新建的yourname.github.io（就是执行上面命令后产生的）文件夹里面，再在这里面打开Git Bash Here，再输入以下命令 12345678910git remote add origin https://github.com/yourname/yourname.github.io.git如果出错提示你已经有了origin可以输入以下命令git remote rm origingit add .git commit -m &quot;your description&quot;git push origin sourse如果出错就可以输入以下命令git pull origin sourse或者直接强行输入git push origin sourse -f 配置确认你的 _config.yml 配置是提交到 master 分支 1234deploy: type: git repository: git@github.com:yourname/yourname.github.io.git branch: master 结果 通过结果可以看出来在sourse文件夹下面的yourname.github.io文件夹里面的内容军上传至Github上yourname仓库的sourse分支下。 新增文件上传方法将添加文件放入到本地仓库分支里面也就是sourse文件夹下面的yourname.github.io文件夹下 然后在里面进行Git Bash Here输入以下命令 add .123git add .git commit -m &quot;your description&quot;git push origin sourse -f 我相信大家已经配置好了博客，如果没配置可以参考我的另一篇Hexo+GitHub搭建博客 文件参考：保存 Hexo 博客源码到 GitHub]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-      </tags>
   </entry>
   <entry>
     <title><![CDATA[VMware Workstation pro 15破解版安装]]></title>
