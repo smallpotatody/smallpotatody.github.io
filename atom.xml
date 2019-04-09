@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://smallpotatody.github.io/"/>
-  <updated>2019-04-05T14:25:34.254Z</updated>
+  <updated>2019-04-09T13:17:42.284Z</updated>
   <id>https://smallpotatody.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WebStorm的安装与破解</title>
+    <link href="https://smallpotatody.github.io/2019/04/09/WebStorm%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E7%A0%B4%E8%A7%A3/"/>
+    <id>https://smallpotatody.github.io/2019/04/09/WebStorm的安装与破解/</id>
+    <published>2019-04-09T10:32:22.000Z</published>
+    <updated>2019-04-09T13:17:42.284Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-WebStorm介绍"><a href="#1-WebStorm介绍" class="headerlink" title="1.WebStorm介绍"></a>1.WebStorm介绍</h2><p>在学习了html+css基础后，想做一些简单的html实战项目，以前在学习html为了方便记忆且容易上手用了Notepad++，现在进行项目实战，难免不了要大量代码以及更多的功能来操作与编写，所以就去下载了WebStorm这种重量级软件来进行学习与开发。</p><p><strong>html提示</strong></p><p><strong>联想查询</strong></p><p><strong>代码重构</strong></p><p><strong>代码检查和快速修复</strong></p><p><strong>代码调试</strong></p><p><strong>代码结构浏览</strong></p><p><strong>代码折叠</strong></p><p><strong>包裹或者去掉外围代码</strong></p><p>对于WebStorm的叙述就到这儿了，“工欲善其事必先利其器”，下面来看看如何安装与破解WebStorm。</p><h2 id="2-WebStorm的下载"><a href="#2-WebStorm的下载" class="headerlink" title="2. WebStorm的下载"></a>2. WebStorm的下载</h2><p>去官网下载</p><p><a href="http://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">WebStorm官网</a></p><p><img src="/2019/04/09/WebStorm的安装与破解/1.png" alt="WebStorm官网"></p><p>点击DOWNLOAD进行下载</p><p>下载完成后双击打开进行安装</p><p><img src="/2019/04/09/WebStorm的安装与破解/2.png" alt></p><p>点击Next</p><p><img src="/2019/04/09/WebStorm的安装与破解/3.png" alt></p><p>选择自己的安装路径</p><p><img src="/2019/04/09/WebStorm的安装与破解/4.png" alt></p><p>根据自己电脑的位数选择，和添加到环境变量，.js .css .html勾选后之后js css html文件默认会用webstorm打开,然后点击Next。</p><p><img src="/2019/04/09/WebStorm的安装与破解/5.png" alt></p><p>点击Install</p><p><img src="/2019/04/09/WebStorm的安装与破解/6.png" alt></p><p><img src="/2019/04/09/WebStorm的安装与破解/7.png" alt></p><p>完成安装，选择I want to manually reboot later，然后点击Finsh。</p><h2 id="3-破解"><a href="#3-破解" class="headerlink" title="3. 破解"></a>3. 破解</h2><p>双击打开程序,选择Do not import settings,点击ok</p><p><img src="/2019/04/09/WebStorm的安装与破解/8.png" alt></p><p>点击Skip</p><p><img src="/2019/04/09/WebStorm的安装与破解/9.png" alt></p><p><strong>方法一：</strong></p><p>注册时，在打开的License Activation窗口中选择“License server”，在输入框输入下面的网址：</p><p><a href="http://idea.imsxm.com/" target="_blank" rel="noopener">http://idea.imsxm.com/</a>或<a href="http://idea.yangyusb.com" target="_blank" rel="noopener">http://idea.yangyusb.com</a></p><p>点击：Activate即可。</p><p><strong>方法二：</strong></p><p>选择Activation code,在其中填入注册码</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2RRJMBXW33-eyJsaWNlbnNlSWQiOiIyUlJKTUJYVzMzIiwibGljZW5zZWVOYW1lIjoi5b285bK4IHNvZnR3YXJlMiIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiJGb3IgZWR1Y2F0aW9uYWwgdXNlIG9ubHkiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwicGFpZFVwVG8iOiIyMDE5LTA3LTA3In0seyJjb2RlIjoiUlMwIiwicGFpZFVwVG8iOiIyMDE5LTA3LTA3In0seyJjb2RlIjoiV1MiLCJwYWlkVXBUbyI6IjIwMTktMDctMDcifSx7ImNvZGUiOiJSRCIsInBhaWRVcFRvIjoiMjAxOS0wNy0wNyJ9LHsiY29kZSI6IlJDIiwicGFpZFVwVG8iOiIyMDE5LTA3LTA3In0seyJjb2RlIjoiREMiLCJwYWlkVXBUbyI6IjIwMTktMDctMDcifSx7ImNvZGUiOiJEQiIsInBhaWRVcFRvIjoiMjAxOS0wNy0wNyJ9LHsiY29kZSI6IlJNIiwicGFpZFVwVG8iOiIyMDE5LTA3LTA3In0seyJjb2RlIjoiRE0iLCJwYWlkVXBUbyI6IjIwMTktMDctMDcifSx7ImNvZGUiOiJBQyIsInBhaWRVcFRvIjoiMjAxOS0wNy0wNyJ9LHsiY29kZSI6IkRQTiIsInBhaWRVcFRvIjoiMjAxOS0wNy0wNyJ9LHsiY29kZSI6IkdPIiwicGFpZFVwVG8iOiIyMDE5LTA3LTA3In0seyJjb2RlIjoiUFMiLCJwYWlkVXBUbyI6IjIwMTktMDctMDcifSx7ImNvZGUiOiJDTCIsInBhaWRVcFRvIjoiMjAxOS0wNy0wNyJ9LHsiY29kZSI6IlBDIiwicGFpZFVwVG8iOiIyMDE5LTA3LTA3In0seyJjb2RlIjoiUlNVIiwicGFpZFVwVG8iOiIyMDE5LTA3LTA3In1dLCJoYXNoIjoiOTUyNzQwMS8wIiwiZ3JhY2VQZXJpb2REYXlzIjowLCJhdXRvUHJvbG9uZ2F0ZWQiOmZhbHNlLCJpc0F1dG9Qcm9sb25nYXRlZCI6ZmFsc2V9-WBR8xuiXaXLeV0obFYbBfUUQ02r54Vj3fE9ImtuXKSP+NuvvnR6lH6gWcVm9PZt67eqdDZa+Deej1NsoGRPDZS5UB6WEt4YVahlOhmG3rgvXPlP98hsfgFUcjr3OQVY7wk5slJ+Q2G9lkpsqwezO+SFIk9yA6pjxyT+U7FjpU8SY5ilsHskq4FG8FoKPYLsfsuwtXrJimRBxVcDClw/QsnCSwgtjuunc8Te37rHb08ZAxtJJieIsjhWnnzrQ3LmxmsR4xstkZOSqD4bYgeNz+m2nbmCWJ5lfP+pnqWfSsUCVri2TUxTpzzTMe4Cx8UhGeJgIgUyBXjq05/0nq3YoVg==-MIIEPjCCAiagAwIBAgIBBTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE1MTEwMjA4MjE0OFoXDTE4MTEwMTA4MjE0OFowETEPMA0GA1UEAwwGcHJvZDN5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO/5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij/78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB/xVy/VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE/EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQC9WZuYgQedSuOc5TOUSrRigMw4/+wuC5EtZBfvdl4HT/8vzMW/oUlIP4YCvA0XKyBaCJ2iX+ZCDKoPfiYXiaSiH+HxAPV6J79vvouxKrWg2XV6ShFtPLP+0gPdGq3x9R3+kJbmAm8w+FOdlWqAfJrLvpzMGNeDU14YGXiZ9bVzmIQbwrBA+c/F4tlK/DV07dsNExihqFoibnqDiVNTGombaU2dDup2gwKdL81ua8EIcGNExHe82kjF4zwfadHk3bQVvbfdAwxcDy4xBjs3L4raPLU3yenSzr/OEur1+jfOxnQSmEcMXKXgrAQ9U55gwjcOFKrgOxEdek/Sk1VfOjvS+nuM4eyEruFMfaZHzoQiuw4IqgGc45ohFH0UUyjYcuFxxDSU9lMCv8qdHKm+wnPRb0l9l5vXsCBDuhAGYD6ss+Ga+aDY6f/qXZuUCEUOH3QUNbbCUlviSz6+GiRnt1kA9N2Qachl+2yBfaqUqr8h7Z2gsx5LcIf5kYNsqJ0GavXTVyWh7PYiKX4bs354ZQLUwwa/cG++2+wNWP+HtBhVxMRNTdVhSm38AknZlD+PTAsWGu9GyLmhti2EnVwGybSD2Dxmhxk3IPCkhKAK+pl0eWYGZWG3tJ9mZ7SowcXLWDFAk0lRJnKGFMTggrWjV8GYpw5bq23VmIqqDLgkNzuoog==</span><br></pre></td></tr></table></figure><p>或者打开网址（<a href="http://idea.lanyus.com/" target="_blank" rel="noopener">IntelliJ IDEA 注册码</a>）跳转到,点击获得注册码</p><p><img src="/2019/04/09/WebStorm的安装与破解/11.png" alt></p><p>将注册码复制到</p><p><img src="/2019/04/09/WebStorm的安装与破解/10.png" alt></p><p><strong>如果没成功，请换一个旧一点的版本，旧的注册码对新版本不管用。</strong></p><p>用破解补丁来破解：</p><p>下载破解补丁<a href="http://idea.lanyus.com/jar/JetbrainsIdesCrack-4.2-release-sha1-3323d5d0b82e716609808090d3dc7cb3198b8c4b.jar" target="_blank" rel="noopener">破解补丁无需使用注册码，下载地址</a>或者去（<a href="http://idea.lanyus.com/" target="_blank" rel="noopener">IntelliJ IDEA 注册码</a>）下载</p><p><img src="/2019/04/09/WebStorm的安装与破解/13.png" alt></p><p>将下载的文件移动到WebStorm安装目录的bin目录下</p><p><img src="/2019/04/09/WebStorm的安装与破解/14.png" alt></p><p>修改安装目录下的 WebStorm.exe.vmoptions 和WebStorm64.exe.vmoptions，这两个文件一个是32位的，一个是64位的，建议同步修改。用文本编辑器打开之后，在文件最上面加一行代码 ：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-javaagent:安装目录/破解补丁名字.jar</span><br></pre></td></tr></table></figure><p><img src="/2019/04/09/WebStorm的安装与破解/15.png" alt></p><p>配置好之后，保存文件。在此再次启动WebStorm，选择Activation code，在其中输入<code>-javaagent:安装目录/破解补丁名字.jar</code>,点击ok完成。</p><p><img src="/2019/04/09/WebStorm的安装与破解/12.png" alt></p><p><img src="/2019/04/09/WebStorm的安装与破解/16.png" alt></p><p>成果：一个八卦图</p><p><img src="/2019/04/09/WebStorm的安装与破解/18.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;1-WebStorm介绍&quot;&gt;&lt;a href=&quot;#1-WebStorm介绍&quot; class=&quot;headerlink&quot; title=&quot;1.WebStorm介绍&quot;&gt;&lt;/a&gt;1.WebStorm介绍&lt;/h2&gt;&lt;p&gt;在学习了html+css基础后，想做一些简单的html实战项
+      
+    
+    </summary>
+    
+      <category term="software" scheme="https://smallpotatody.github.io/categories/software/"/>
+    
+    
+      <category term="html+css" scheme="https://smallpotatody.github.io/tags/html-css/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS部分</title>
