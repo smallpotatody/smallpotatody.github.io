@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://smallpotatody.github.io/"/>
-  <updated>2019-04-09T13:17:42.284Z</updated>
+  <updated>2019-04-18T14:11:10.936Z</updated>
   <id>https://smallpotatody.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git和Node.js重新安装</title>
+    <link href="https://smallpotatody.github.io/2019/04/18/Git%E5%92%8CNode-js%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85/"/>
+    <id>https://smallpotatody.github.io/2019/04/18/Git和Node-js重新安装/</id>
+    <published>2019-04-18T10:30:43.000Z</published>
+    <updated>2019-04-18T14:11:10.936Z</updated>
+    
+    <content type="html"><![CDATA[<p>由于最近误删了一个东西，导致Windows10系统崩溃，好像是把系统引导给搞坏了，看了网上一大堆的方法来拯救，最终还是嫌麻烦，就直接重装系统，那么问题就来了，导致我的Git和Node.js也出现了一些问题，不能直接导出，就很麻烦，然后又去下载这两个东西和安装以及配置。</p><h1 id="1-Git安装教程"><a href="#1-Git安装教程" class="headerlink" title="1.Git安装教程"></a>1.Git安装教程</h1><p>下载地址：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git下载地址</a></p><p>开始安装</p><h3 id="第一步：点击next"><a href="#第一步：点击next" class="headerlink" title="第一步：点击next"></a>第一步：点击next</h3><p><img src="/2019/04/18/Git和Node-js重新安装/1.png" alt></p><h3 id="第二步：根据自己想安装软件的位置来选者路径-我这里选择的是D-app-blog-software"><a href="#第二步：根据自己想安装软件的位置来选者路径-我这里选择的是D-app-blog-software" class="headerlink" title="第二步：根据自己想安装软件的位置来选者路径(我这里选择的是D:\app\blog_software)"></a>第二步：根据自己想安装软件的位置来选者路径(我这里选择的是D:\app\blog_software)</h3><p><img src="/2019/04/18/Git和Node-js重新安装/2.png" alt></p><h3 id="第三步：安装配置文件，更具自己需要选择"><a href="#第三步：安装配置文件，更具自己需要选择" class="headerlink" title="第三步：安装配置文件，更具自己需要选择"></a>第三步：安装配置文件，更具自己需要选择</h3><p><img src="/2019/04/18/Git和Node-js重新安装/3.png" alt></p><h3 id="第四步：不创建启动文件夹（勾选Don’t-create-a-Star-Menu-folder）"><a href="#第四步：不创建启动文件夹（勾选Don’t-create-a-Star-Menu-folder）" class="headerlink" title="第四步：不创建启动文件夹（勾选Don’t create a Star Menu folder）"></a>第四步：不创建启动文件夹（勾选Don’t create a Star Menu folder）</h3><p><img src="/2019/04/18/Git和Node-js重新安装/4.png" alt></p><h3 id="第五步：选择默认编辑器"><a href="#第五步：选择默认编辑器" class="headerlink" title="第五步：选择默认编辑器"></a>第五步：选择默认编辑器</h3><p><img src="/2019/04/18/Git和Node-js重新安装/5.png" alt></p><h3 id="第六步：点击Next"><a href="#第六步：点击Next" class="headerlink" title="第六步：点击Next"></a>第六步：点击Next</h3><p><img src="/2019/04/18/Git和Node-js重新安装/6.png" alt></p><h3 id="第七步：使用默认设置就行"><a href="#第七步：使用默认设置就行" class="headerlink" title="第七步：使用默认设置就行"></a>第七步：使用默认设置就行</h3><p><img src="/2019/04/18/Git和Node-js重新安装/7.png" alt></p><h3 id="第八步：默认"><a href="#第八步：默认" class="headerlink" title="第八步：默认"></a>第八步：默认</h3><p><img src="/2019/04/18/Git和Node-js重新安装/8.png" alt></p><h3 id="第九步：在终端模拟器选择页面，默认即可，配置后Git"><a href="#第九步：在终端模拟器选择页面，默认即可，配置后Git" class="headerlink" title="第九步：在终端模拟器选择页面，默认即可，配置后Git"></a>第九步：在终端模拟器选择页面，默认即可，配置后Git</h3><p><img src="/2019/04/18/Git和Node-js重新安装/9.png" alt></p><h3 id="第十步：最后配置Git额外选择默认安装"><a href="#第十步：最后配置Git额外选择默认安装" class="headerlink" title="第十步：最后配置Git额外选择默认安装"></a>第十步：最后配置Git额外选择默认安装</h3><p><img src="/2019/04/18/Git和Node-js重新安装/10.png" alt></p><h3 id="第十一步：安装完成"><a href="#第十一步：安装完成" class="headerlink" title="第十一步：安装完成"></a>第十一步：安装完成</h3><p><img src="/2019/04/18/Git和Node-js重新安装/11.png" alt></p><p><strong>检验 </strong>：</p><p><img src="/2019/04/18/Git和Node-js重新安装/12.png" alt></p><p><img src="/2019/04/18/Git和Node-js重新安装/13.png" alt></p><h1 id="2-Node-js安装"><a href="#2-Node-js安装" class="headerlink" title="2.Node.js安装"></a>2.Node.js安装</h1><p>下载地址：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node.js官网下载地址</a></p><h3 id="第一步：下载完成后，开始安装"><a href="#第一步：下载完成后，开始安装" class="headerlink" title="第一步：下载完成后，开始安装"></a>第一步：下载完成后，开始安装</h3><p><img src="/2019/04/18/Git和Node-js重新安装/2_1.png" alt></p><h3 id="第二步：接受协议"><a href="#第二步：接受协议" class="headerlink" title="第二步：接受协议"></a>第二步：接受协议</h3><p><img src="/2019/04/18/Git和Node-js重新安装/2_2.png" alt></p><h3 id="第三步：根据自己要安装的地方选择安装目录-我这里选择D-app-blog-software-Node-js路径下"><a href="#第三步：根据自己要安装的地方选择安装目录-我这里选择D-app-blog-software-Node-js路径下" class="headerlink" title="第三步：根据自己要安装的地方选择安装目录(我这里选择D:\app\blog_software\Node.js路径下)"></a>第三步：根据自己要安装的地方选择安装目录(我这里选择D:\app\blog_software\Node.js路径下)</h3><p><img src="/2019/04/18/Git和Node-js重新安装/2_3.png" alt></p><h3 id="第四步：选择安装项，一般默认"><a href="#第四步：选择安装项，一般默认" class="headerlink" title="第四步：选择安装项，一般默认"></a>第四步：选择安装项，一般默认</h3><p><img src="/2019/04/18/Git和Node-js重新安装/2_4.png" alt></p><h3 id="第五步：点击“Install”按钮，开始安装"><a href="#第五步：点击“Install”按钮，开始安装" class="headerlink" title="第五步：点击“Install”按钮，开始安装"></a>第五步：点击“Install”按钮，开始安装</h3><p><img src="/2019/04/18/Git和Node-js重新安装/2_7.png" alt></p><h3 id="第六步：过程"><a href="#第六步：过程" class="headerlink" title="第六步：过程"></a>第六步：过程</h3><p><img src="/2019/04/18/Git和Node-js重新安装/2_5.png" alt></p><h3 id="完成安装"><a href="#完成安装" class="headerlink" title="完成安装"></a>完成安装</h3><p><img src="/2019/04/18/Git和Node-js重新安装/2_6.png" alt></p><p><strong>检验</strong>：</p><p>　1.node -v 查看 node 版本</p><p>​    2.npm -v 查看 npm 版本</p><p><img src="/2019/04/18/Git和Node-js重新安装/2_8.png" alt></p><h1 id="3-环境配置"><a href="#3-环境配置" class="headerlink" title="3.环境配置"></a>3.环境配置</h1><p>说明：这里的环境配置主要配置的是npm安装的全局模块所在的路径，以及缓存cache的路径，之所以要配置，是因为以后在执行类似：npm install express [-g] （后面的可选参数-g，g代表global全局安装的意思）的安装语句时，会将安装的模块安装到【C:\Users\用户名\AppData\Roaming\npm】路径中，占C盘空间。<br>例如：我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\app\blog_software\Node.js】下创建两个文件夹【node_global】及【node_cache】如下图：</p><p><img src="/2019/04/18/Git和Node-js重新安装/15.png" alt></p><p>创建完两个空文件夹之后，打开cmd命令窗口，输入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm config set prefix &quot;D:\app\blog_software\Node.js\node_global&quot;</span><br><span class="line">npm config set prefix &quot;D:\app\blog_software\Node.js\node_cache&quot;</span><br></pre></td></tr></table></figure><p><img src="/2019/04/18/Git和Node-js重新安装/14.png" alt></p><p>接下来设置环境变量，“我的电脑”-右键-“属性”-“高级系统设置”-“高级”-“环境变量”</p><p><img src="/2019/04/18/Git和Node-js重新安装/16.png" alt></p><p>在用户变量里选择Path，点击新建，在弹出的框中点击新建，然后在其中添加node_modules文件夹的位置。</p><p><img src="/2019/04/18/Git和Node-js重新安装/17.png" alt></p><p><strong>完成所有的操作，可以在任意地方测试</strong></p><p><img src="/2019/04/18/Git和Node-js重新安装/18.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;由于最近误删了一个东西，导致Windows10系统崩溃，好像是把系统引导给搞坏了，看了网上一大堆的方法来拯救，最终还是嫌麻烦，就直接重装系统，那么问题就来了，导致我的Git和Node.js也出现了一些问题，不能直接导出，就很麻烦，然后又去下载这两个东西和安装以及配置。&lt;/p
+      
+    
+    </summary>
+    
+      <category term="Node.js" scheme="https://smallpotatody.github.io/categories/Node-js/"/>
+    
+    
+      <category term="Git" scheme="https://smallpotatody.github.io/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>WebStorm的安装与破解</title>
