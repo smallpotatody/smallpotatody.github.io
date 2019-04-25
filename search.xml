@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[用VMware Workstation15安装Ubuntu19.04]]></title>
+    <url>%2F2019%2F04%2F25%2F%E7%94%A8VMware-Workstation15%E5%AE%89%E8%A3%85Ubuntu19-04%2F</url>
+    <content type="text"><![CDATA[Ubuntu（友帮拓、优般图、乌班图）是一个以桌面应用为主的开源GNU/Linux操作系统，Ubuntu 是基于DebianGNU/Linux，支持x86、amd64（即x64）和ppc架构，由全球化的专业开发团队（Canonical Ltd）打造的。 1.下载Ubuntuubuntu下载地址：官网 18是LTS版是长期支持（Long Term Support）的缩写。直到2023年四月，免费安全和维护更新。19只提供九个月到2020年1月，根据自己需求选择，我这里选择19。 2.安装我相信大家都应该安装好了自己的Vmware Workstation15，如果没有安装好，可以参考一下我的另一篇博客：VMware Workstation pro 15破解版安装 1.双击运行VMware Workstation Pro 2.创建新的虚拟机可以选择典型和自定义，我喜欢个性化，所以就选择了自定义。 下一步 选择安装程序光盘映像文件(iso)(M):，点击浏览选择刚刚下载的Ubuntu镜像 进行简单的配置用户名和密码 设置虚拟机名称和安装的位置 根据自己电脑的CPU来设置处理器数量和内核数量 设置内存 默认选择，下一步 创建新虚拟磁盘 分配磁盘空间大小和选择将虚拟磁盘存储为单个文件 默认，下一步 完成 3.开始安装ubuntu 点击开启此虚拟机 我们可以先看看，点击Try Ubuntu 然后关闭重新启动进行安装 选择语言后进行安装 直接点击继续 简单的配置自己的用户名以及密码 这个安装时间有点长 安装完成后重启 3.使用 打开终端输入sudo apt-get update sudo apt-get upgrade]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[kali安装中文搜狗输入法]]></title>
     <url>%2F2019%2F04%2F21%2Fkali%E5%AE%89%E8%A3%85%E4%B8%AD%E6%96%87%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95%2F</url>
     <content type="text"><![CDATA[我们在使用大多数linux系统时，有些不提供中文输入法，这就导致我们在使用时存在一些困难，毕竟刚接触linux系统，还是图形界面，对我们这些初学Linux的人来说有许多？那么我们要坚持一个不懂就学懂好习惯，去网上查找答案，因为英语不是很好（英语大神请绕道），所以就需要中文输入法； kali安装搜狗输入法1.修改软件源leafpad /etc/apt/sources.list ) 或 vim /etc/apt/sources.list键盘输入e 进入下面界面 输入i键后，进行编辑，即下方显示“– 插入 –” 编辑完成后，按ESC键退出，然后再按”:wq”保存并退出。 123456789101112#kali官方源deb http://http.kali.org/kali kali-rolling main non-free contrib#中科大的源deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contribdeb http://mirrors.ustc.edu.cn/kali kali-rolling main contrib non-freedeb-src http://mirrors.ustc.edu.cn/kali kali-rolling main contrib non-freedeb http://mirrors.ustc.edu.cn/kali-security kali-current/updates main contrib non-freedeb-src http://mirrors.ustc.edu.cn/kali-security kali-current/updates main contrib non-free#阿里云源deb http://mirrors.aliyun.com/kali kali-rolling main non-free contribdeb http://mirrors.aliyun.com/kali-security/ kali-rolling main contrib non-freedeb-src http://mirrors.aliyun.com/kali-security/ kali-rolling main contrib non-free 从中任意选两个就ok了！ 2.安装fcitxsudo apt-get install fcitx 3.下载并安装搜狗输入法搜狗输入法下载地址 根据自己的系统位数来下载搜狗输入法 切换到下载目录，先直接安装 dpkg -i sogoupinyin_2.2.0.0108_amd64.deb 注意：出现错误时，输入apt-get -f install 安装成功后，桌面上会出现Fcitx和Fcitx配置两个企鹅图标 点开Fcitx配置，看输入法中是否会出现搜狗拼音，有就成功了，没有就手动导入一下 4.最后使用搜狗输入法重启电脑后，ctrl+空格键变换输入法 测试结果，有多种皮肤供选择，选择自己觉得最好看的一个作为皮肤]]></content>

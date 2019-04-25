@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://smallpotatody.github.io/"/>
-  <updated>2019-04-21T13:36:53.723Z</updated>
+  <updated>2019-04-25T03:16:36.287Z</updated>
   <id>https://smallpotatody.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用VMware Workstation15安装Ubuntu19.04</title>
+    <link href="https://smallpotatody.github.io/2019/04/25/%E7%94%A8VMware-Workstation15%E5%AE%89%E8%A3%85Ubuntu19-04/"/>
+    <id>https://smallpotatody.github.io/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/</id>
+    <published>2019-04-25T00:50:29.000Z</published>
+    <updated>2019-04-25T03:16:36.287Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Ubuntu（友帮拓、优般图、乌班图）是一个以<a href="https://baike.baidu.com/item/%E6%A1%8C%E9%9D%A2" target="_blank" rel="noopener">桌面</a>应用为主的开源GNU/Linux操作系统，Ubuntu 是基于<a href="https://baike.baidu.com/item/Debian" target="_blank" rel="noopener">Debian</a>GNU/<a href="https://baike.baidu.com/item/Linux" target="_blank" rel="noopener">Linux</a>，支持x86、amd64（即x64）和<a href="https://baike.baidu.com/item/ppc/150" target="_blank" rel="noopener">ppc</a>架构，由全球化的专业开发团队（Canonical Ltd）打造的。</p></blockquote><h1 id="1-下载Ubuntu"><a href="#1-下载Ubuntu" class="headerlink" title="1.下载Ubuntu"></a>1.下载Ubuntu</h1><p>ubuntu下载地址：<a href="https://www.ubuntu.com/download/desktop" target="_blank" rel="noopener">官网</a></p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/1.png" alt></p><p>18是LTS版是长期支持（Long Term Support）的缩写。直到2023年四月，免费安全和维护更新。19只提供九个月到2020年1月，根据自己需求选择，我这里选择19。</p><h1 id="2-安装"><a href="#2-安装" class="headerlink" title="2.安装"></a>2.安装</h1><p>我相信大家都应该安装好了自己的Vmware Workstation15，如果没有安装好，可以参考一下我的另一篇博客：<a href="https://smallpotatody.github.io/2019/03/26/VMware-15%E7%A0%B4%E8%A7%A3%E7%89%88/">VMware Workstation pro 15破解版安装</a></p><h2 id="1-双击运行VMware-Workstation-Pro"><a href="#1-双击运行VMware-Workstation-Pro" class="headerlink" title="1.双击运行VMware Workstation Pro"></a>1.双击运行VMware Workstation Pro</h2><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/2.png" alt></p><h2 id="2-创建新的虚拟机"><a href="#2-创建新的虚拟机" class="headerlink" title="2.创建新的虚拟机"></a>2.创建新的虚拟机</h2><p>可以选择典型和自定义，我喜欢个性化，所以就选择了自定义。</p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/3.png" alt></p><p>下一步</p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/4.png" alt></p><p>选择安装程序光盘映像文件(iso)(M):，点击浏览选择刚刚下载的Ubuntu镜像</p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/5.png" alt></p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/6.png" alt></p><p>进行简单的配置用户名和密码</p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/7.png" alt></p><p>设置虚拟机名称和安装的位置</p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/8.png" alt></p><p>根据自己电脑的CPU来设置处理器数量和内核数量</p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/9.png" alt></p><p>设置内存</p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/10.png" alt></p><p>默认选择，下一步</p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/11.png" alt></p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/12.png" alt></p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/13.png" alt></p><p>创建新虚拟磁盘</p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/14.png" alt></p><p>分配磁盘空间大小和选择将虚拟磁盘存储为单个文件</p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/15.png" alt></p><p>默认，下一步</p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/16.png" alt></p><p>完成</p><h2 id="3-开始安装ubuntu"><a href="#3-开始安装ubuntu" class="headerlink" title="3.开始安装ubuntu"></a>3.开始安装ubuntu</h2><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/18.png" alt></p><p>点击开启此虚拟机</p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/19.png" alt></p><p>我们可以先看看，点击Try Ubuntu</p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/20.png" alt></p><p>然后关闭重新启动进行安装</p><p>选择语言后进行安装</p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/21.png" alt></p><p>直接点击继续</p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/22.png" alt></p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/23.png" alt></p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/24.png" alt></p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/25.png" alt></p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/26.png" alt></p><p>简单的配置自己的用户名以及密码</p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/27.png" alt></p><p>这个安装时间有点长</p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/28.png" alt></p><p>安装完成后重启</p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/29.png" alt></p><h1 id="3-使用"><a href="#3-使用" class="headerlink" title="3.使用"></a>3.使用</h1><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/30.png" alt></p><p>打开终端输入<code>sudo apt-get update</code></p><p><code>sudo apt-get upgrade</code></p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/31.png" alt></p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/32.png" alt></p><p><img src="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/33.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;Ubuntu（友帮拓、优般图、乌班图）是一个以&lt;a href=&quot;https://baike.baidu.com/item/%E6%A1%8C%E9%9D%A2&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;桌面&lt;/a&gt;应用为主的开
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://smallpotatody.github.io/categories/linux/"/>
+    
+    
+      <category term="ubuntu" scheme="https://smallpotatody.github.io/tags/ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>kali安装中文搜狗输入法</title>
