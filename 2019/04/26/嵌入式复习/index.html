@@ -71,7 +71,7 @@
 
 
 
-  <meta name="keywords" content="小土豆">
+  <meta name="keywords" content="嵌入式,">
 
 
 
@@ -84,16 +84,23 @@
 
 
 
-<meta name="description" content="There is no end to learning">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小土豆">
-<meta property="og:url" content="https://smallpotatody.github.io/categories/虚拟机/index.html">
+<meta name="description" content="第一章嵌入式系统概念：以应用为中心，以计算机为基础，软件、硬件可裁剪，功能、可靠性、成本、体积、功耗严格要求的专用计算机系统（国内）；用于控制、监控或辅助操作机器和设备的装置（IEEE）； 嵌入式发展阶段：无操作系统阶段、简单操作系统阶段、实时操作系统阶段、面向Internet阶段； 嵌入式应用领域：工业控制、交通管理、信息家电、家庭智能管理、网络及电子商务、环境监测和机器人等方面。 嵌入式技术的">
+<meta name="keywords" content="嵌入式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="嵌入式复习第一章">
+<meta property="og:url" content="https://smallpotatody.github.io/2019/04/26/嵌入式复习/index.html">
 <meta property="og:site_name" content="小土豆">
-<meta property="og:description" content="There is no end to learning">
+<meta property="og:description" content="第一章嵌入式系统概念：以应用为中心，以计算机为基础，软件、硬件可裁剪，功能、可靠性、成本、体积、功耗严格要求的专用计算机系统（国内）；用于控制、监控或辅助操作机器和设备的装置（IEEE）； 嵌入式发展阶段：无操作系统阶段、简单操作系统阶段、实时操作系统阶段、面向Internet阶段； 嵌入式应用领域：工业控制、交通管理、信息家电、家庭智能管理、网络及电子商务、环境监测和机器人等方面。 嵌入式技术的">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zgLb3gy1g2fuia516uj30n20domy4.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zgLb3gy1g2fuiqx4hcj314a0s4417.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zgLb3gy1g2fukir0rwj30rp0l0q39.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zgLb3gy1g2fuk0jeq3j30x50l0gmb.jpg">
+<meta property="og:updated_time" content="2019-04-26T03:09:26.607Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小土豆">
-<meta name="twitter:description" content="There is no end to learning">
+<meta name="twitter:title" content="嵌入式复习第一章">
+<meta name="twitter:description" content="第一章嵌入式系统概念：以应用为中心，以计算机为基础，软件、硬件可裁剪，功能、可靠性、成本、体积、功耗严格要求的专用计算机系统（国内）；用于控制、监控或辅助操作机器和设备的装置（IEEE）； 嵌入式发展阶段：无操作系统阶段、简单操作系统阶段、实时操作系统阶段、面向Internet阶段； 嵌入式应用领域：工业控制、交通管理、信息家电、家庭智能管理、网络及电子商务、环境监测和机器人等方面。 嵌入式技术的">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/005zgLb3gy1g2fuia516uj30n20domy4.jpg">
 
 
 
@@ -123,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="https://smallpotatody.github.io/categories/虚拟机/">
+  <link rel="canonical" href="https://smallpotatody.github.io/2019/04/26/嵌入式复习/">
 
 
 
 
 
-  <title>分类: 虚拟机 | 小土豆</title>
+  <title>嵌入式复习第一章 | 小土豆</title>
   
 
 
@@ -148,7 +155,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
   <a href="https://github.com/smallpotatody" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#FD6C6C; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
@@ -275,53 +282,325 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>虚拟机<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://smallpotatody.github.io/2019/04/26/嵌入式复习/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="smallpotato">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/4.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小土豆">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/03/26/VMware-15破解版/" itemprop="url">
-              
-                <span itemprop="name">VMware Workstation pro 15破解版安装</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">嵌入式复习第一章</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-26T18:14:43+08:00" content="2019-03-26">
-          03-26
-        </time>
-      </div>
+        <div class="post-meta">
+			
 
-    </header>
-  </article>
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于&#58;</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-26T11:00:43+08:00">
+                2019-04-26
+              </time>
+            
 
+            
+
+            
+          </span>
+		  
+		  
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+                               
+                <span class="post-meta-item-text">分类于&#58;</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/嵌入式/" itemprop="url" rel="index">
+                    <span itemprop="name">嵌入式</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本文总阅读量
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.5k字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><p><strong>嵌入式系统概念：</strong>以应用为中心，以计算机为基础，软件、硬件可裁剪，功能、可靠性、成本、体积、功耗严格要求的专用计算机系统（国内）；用于控制、监控或辅助操作机器和设备的装置（IEEE）；</p>
+<p><strong>嵌入式发展阶段：</strong>无操作系统阶段、简单操作系统阶段、实时操作系统阶段、面向Internet阶段；</p>
+<p><strong>嵌入式应用领域：</strong>工业控制、交通管理、信息家电、家庭智能管理、网络及电子商务、环境监测和机器人等方面。</p>
+<p><strong>嵌入式技术的发展趋势：</strong></p>
+<ol>
+<li><p>嵌入式应用软件的开发需要强大的开发工具和操作系统的支持；</p>
+</li>
+<li><p>联网成为必然趋势；</p>
+</li>
+<li><p>精简系统内核、算法，设备实现小尺寸、微功耗和低成本；</p>
+</li>
+<li><p>提供精巧的多媒体人机界面；</p>
+<p>嵌入式系统的基本组成：</p>
+</li>
+</ol>
+<p><img src="http://ww1.sinaimg.cn/large/005zgLb3gy1g2fuia516uj30n20domy4.jpg" alt></p>
+<p><img src="http://ww1.sinaimg.cn/large/005zgLb3gy1g2fuiqx4hcj314a0s4417.jpg" alt></p>
+<p><strong>嵌入式系统的重要特征：</strong></p>
+<ol>
+<li><p>系统内核小</p>
+</li>
+<li><p>专用性强</p>
+</li>
+<li><p>系统精简和高实时性操作系统</p>
+</li>
+<li><p>高效率的设计</p>
+</li>
+<li><p>创新性和有效性</p>
+</li>
+<li><p>嵌入式软件开发走向标准化</p>
+</li>
+<li><p>嵌入式系统开发工具和环境</p>
+</li>
+</ol>
+<p><strong>嵌入式系统的硬件组成：</strong></p>
+<p>嵌入式系统基本硬件架构主要包括有处理器、外围电路及接口和外部设备三大部分。其中外围电路一般有时钟、复位电路、程序存储器、数据存储器和电源模块等部件组成；</p>
+<p><img src="http://ww1.sinaimg.cn/large/005zgLb3gy1g2fukir0rwj30rp0l0q39.jpg" alt></p>
+<p><strong>嵌入式处理器分类：</strong></p>
+<p>​     嵌入式微控制器（MCU）：主要特点：单片化，体积大大减小，功耗和成本低、可靠性提高。</p>
+<p>​      嵌入式DSP处理器（DSP）：专门用于信号处理方面的处理器，具有在系统结构和指令算法方面进行了特殊设计，执行DSP算法，编译效率较高，指令执行速度也很快。</p>
+<p>​      嵌入式微处理器（MPU）：只保留和嵌入式应用紧密相关的功能硬件，去除冗余部分，体积小、重量轻、成本低、可靠性高的优点。</p>
+<p>​      嵌入式片上系统（System On Chip）：成功实现了软/硬件无缝结合。可以直接在处理器片内嵌入操作系统的代码模块。可以用VHDL等硬件描述语言进行系统设计。只需要使用精确的编程语言，综合时序设计可直接在器件库中调用各种通用处理器标准。</p>
+<p><img src="http://ww1.sinaimg.cn/large/005zgLb3gy1g2fuk0jeq3j30x50l0gmb.jpg" alt></p>
+<p><strong>嵌入式系统好处：</strong>就是屏蔽了底层硬件的差别，给上层应用提供统一的接口，并管理进程调度和资源（如<strong><strong>CPU</strong></strong>时间、内存）分配等。</p>
+<p><strong>主要有实时系统、分时系统（非实时系统）和顺序执行系统。</strong></p>
+<p>（1）实时操作系统：系统内有多个程序运行，每个程序有不同的优先级，只有最高优先级的任务才能占有CPU的控制权。VXworks、UC/OS</p>
+<p>（2）分时操作系统：系统内同时可以有多个程序运行，把CPU的时间分按顺序分成若干片，每个时间片内执行不同的程序，如UNIX，windows。</p>
+<p>（3）顺序执行系统：系统内只含有一个程序，独占CPU的运行时间，按语句顺序执行该程序，直至执行完毕，另一程序才能启动运行。如DOS操作系统</p>
+<p><strong>实时性：</strong></p>
+<p>它的正确性不仅与系统的逻辑正确性相关，而且与系统的响应时间相关。</p>
+<p>具有强(硬）实时特点的嵌入式操作系统</p>
+<p>​      系统在指定的时间内未能实现某个确定的任务，会导致系统的全面失败，则被称为硬（强）实时系统。硬实时系统，其系统响应时间在毫秒或微秒级。一个硬实时系统通常在硬件上需要添加专门用于时间和优先级管理的控制芯片，uc/os和VxWorks是典型的实时操作系统。</p>
+<p>具有弱（软）实时特点的嵌入式操作系统</p>
+<p>​      在软实时系统中，虽然响应时间同样重要，但是超时却不会发生致命的错误。软实时系统则主要在软件方面通过编程实现现实的管理。比如Windows CE、uCLinux是一个多任务分时系统。一般软实时系统，其系统响应时间在毫秒或几秒的数量级上，其实时性的要求比强实时系统要差一些（电子菜谱的查询）。</p>
+<p><strong>第一章：</strong></p>
+<ol>
+<li><strong>在日常生活中，你接触过哪些嵌入式产品？他们都有些什么功能?</strong></li>
+</ol>
+<p><strong>答：数字电视、手持通信、智能玩具。</strong></p>
+<ol>
+<li><strong>嵌入式硬实时操作系统与软实时操作系统的区别是什么？</strong></li>
+</ol>
+<p><strong>答：硬实时操作系统的系统在指定的时间内未能实现某个确定的任务，会导致系统的全面失败，一个硬实时系统通常在硬件上需要添加专门用于时间和优先级管理的控制芯片，响应时间在毫秒或微秒级上。在软实时系统中，虽然响应时间同样重要，但是超时却不会发生致命的错误。软实时系统则主要在软件方面通过编程实现现实的管理，系统响应时间在毫秒或几秒的数量级上</strong></p>
+<ol>
+<li><strong>嵌入式处理器是如何分类的？</strong></li>
+</ol>
+<p><strong>答：嵌入式微控制器（MCU）、嵌入式DSP处理器（DSP）、嵌入式微处理器（MPU）、嵌入式片上系统（System On Chip）。</strong></p>
+<ol>
+<li><strong>嵌入式操作系统的作用是什么？</strong></li>
+</ol>
+<p><strong>答：屏蔽了底层硬件的差别，给上层应用提供统一的接口，并管理进程调度和资源（如CPU**</strong>时间内存）分配等。**</p>
+<ol>
+<li><strong>交叉开发的概念。</strong></li>
+</ol>
+<p><strong>答：在一台通用计算机上进行软件的编辑、编译，然后下载到嵌入式系统中运行调试。</strong></p>
+<ol>
+<li><strong>主流的操作系统的特点</strong></li>
+</ol>
+<p><strong>答：windows：用户多；Linux：开源，免费；</strong></p>
 
       
     </div>
+    
+    
+    
+	
 
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.gif" alt="smallpotato 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+	<div>
+		
+		
+		
+	</div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/嵌入式/" rel="tag"><i class="fa fa-tag"></i> 嵌入式</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/25/用VMware-Workstation15安装Ubuntu19-04/" rel="next" title="用VMware Workstation15安装Ubuntu19.04">
+                <i class="fa fa-chevron-left"></i> 用VMware Workstation15安装Ubuntu19.04
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -329,6 +608,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MzA4MS8xOTYyNw"></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -350,8 +638,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -445,6 +742,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第一章"><span class="nav-number">1.</span> <span class="nav-text">第一章</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -628,6 +941,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -656,6 +973,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
