@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "8f2a50d5"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=5.1.4">
+
+
+
+
+
+
+  <meta name="keywords" content="javascript,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="小土豆" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="JavaScript简介1. JavaScript简介 JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。  Javascript包含了三个部分：ECMAScript、DOM和B">
+<meta name="keywords" content="javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javaScript">
+<meta property="og:url" content="https://smallpotatody.github.io/2019/06/03/JavaScript/index.html">
+<meta property="og:site_name" content="小土豆">
+<meta property="og:description" content="JavaScript简介1. JavaScript简介 JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。  Javascript包含了三个部分：ECMAScript、DOM和B">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/06/03/JavaScript/1.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/06/03/JavaScript/3.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/06/03/JavaScript/2.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/06/03/JavaScript/4.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/06/03/JavaScript/5.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/06/03/JavaScript/6.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/06/03/JavaScript/7.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/06/03/JavaScript/9.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/06/03/JavaScript/8.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/06/03/JavaScript/10.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/06/03/JavaScript/11.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/06/03/JavaScript/12.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/06/03/JavaScript/13.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/06/03/JavaScript/14.png">
+<meta property="og:updated_time" content="2019-06-06T04:36:36.387Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="javaScript">
+<meta name="twitter:description" content="JavaScript简介1. JavaScript简介 JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。  Javascript包含了三个部分：ECMAScript、DOM和B">
+<meta name="twitter:image" content="https://smallpotatody.github.io/2019/06/03/JavaScript/1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://smallpotatody.github.io/2019/06/03/JavaScript/">
+
+
+
+
+
+  <title>javaScript | 小土豆</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+  <a href="https://github.com/smallpotatody" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#FD6C6C; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">小土豆</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">-博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://smallpotatody.github.io/2019/06/03/JavaScript/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="smallpotato">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/4.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小土豆">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">javaScript</h1>
+        
+
+        <div class="post-meta">
+			
+
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于&#58;</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-03T09:04:06+08:00">
+                2019-06-03
+              </time>
+            
+
+            
+
+            
+          </span>
+		  
+		  
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+                               
+                <span class="post-meta-item-text">分类于&#58;</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本文总阅读量
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  3.5k字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  12分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="JavaScript简介"><a href="#JavaScript简介" class="headerlink" title="JavaScript简介"></a>JavaScript简介</h1><h2 id="1-JavaScript简介"><a href="#1-JavaScript简介" class="headerlink" title="1. JavaScript简介"></a>1. JavaScript简介</h2><blockquote>
+<p>JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在<a href="https://baike.baidu.com/item/HTML" target="_blank" rel="noopener">HTML</a>（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。</p>
+</blockquote>
+<p>Javascript包含了三个部分：ECMAScript、DOM和BOM</p>
+<h2 id="2-如何使用JavaScript"><a href="#2-如何使用JavaScript" class="headerlink" title="2. 如何使用JavaScript"></a>2. 如何使用JavaScript</h2><p>通过<code>&lt;script type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code>中直接编写</p>
+<p>通过<code>&lt;script type=&quot;text/javascript&quot; src=&#39;目标文档的url&#39;&gt;&lt;/script&gt;</code>链接外部的Js文件，一旦应用了外部文件，就不能编写代码了，即使编写了，浏览器也会忽略。</p>
+<p>作为某个元素的事件属性值或者是超链接的href属性值</p>
+<p><img src="/2019/06/03/JavaScript/1.png" alt></p>
+<h2 id="3-代码屏蔽"><a href="#3-代码屏蔽" class="headerlink" title="3. 代码屏蔽"></a>3. 代码屏蔽</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">&lt;!--</span><br><span class="line">	Js代码</span><br><span class="line">//--&gt;</span><br><span class="line">&lt;script&gt;</span><br></pre></td></tr></table></figure>
+<p>如果浏览器不支持Js，可以使用<code>&lt;noscript&gt;&lt;/noscript&gt;</code>标签，显示noscript中的内容</p>
+<h2 id="4-Javascript的基本语法"><a href="#4-Javascript的基本语法" class="headerlink" title="4. Javascript的基本语法"></a>4. Javascript的基本语法</h2><ul>
+<li>Javascript的执行顺序：按照在html文件中的顺序依次执行</li>
+<li>大小写敏感：Javascript严格区分大小写</li>
+<li>忽略空白符和换行符</li>
+<li><p>语句分隔符：</p>
+<ul>
+<li>使用<code>;</code>结束语句,可以把多个语句写在一行，最后一个语句的分号可以省略，但尽量不要省略，可以使用{}括成一个语句组，形成一个块block</li>
+</ul>
+</li>
+<li><p>通过\对代码进行拆行操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">document.write(&apos;hello\</span><br><span class="line">world&apos;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>注释：</p>
+<p>单行注释 <code>//</code></p>
+<p>多行注释 <code>/*注释内容*/</code> </p>
+</li>
+<li><p>保留字</p>
+</li>
+<li>通过<code>document.write()</code>向文档书写内容</li>
+<li>通过<code>console.log()</code>向控制台写入内容</li>
+<li>Javascript中的错误<ul>
+<li>语法错误：通过控制台进行调试</li>
+<li>逻辑错误：通过alert()进行调试</li>
+</ul>
+</li>
+</ul>
+<h2 id="5-标识符"><a href="#5-标识符" class="headerlink" title="5. 标识符"></a>5. 标识符</h2><ul>
+<li>在JS中所有的可以由我们自主命名的都可以成为标识符。</li>
+<li>规则：<ol>
+<li>标识符中可以含有字母、数字、_、$</li>
+<li>标识符不能以数字开头</li>
+<li>标识符不能是ES中的关键字或保留字</li>
+<li>标识符一般都采用驼峰命名法</li>
+</ol>
+</li>
+</ul>
+<h1 id="数据类型与变量"><a href="#数据类型与变量" class="headerlink" title="数据类型与变量"></a>数据类型与变量</h1><h2 id="1-原始数据类型"><a href="#1-原始数据类型" class="headerlink" title="1. 原始数据类型"></a>1. 原始数据类型</h2><ul>
+<li><p>数值型</p>
+<ul>
+<li><p>十进制数</p>
+</li>
+<li><p>十六进制数</p>
+</li>
+<li><p>八进制数</p>
+</li>
+<li><p>特殊值</p>
+<p>Infinity无穷大</p>
+<p>NaN ：可以通过isNaN()检测值是否为NaN</p>
+</li>
+</ul>
+</li>
+<li><p>字符串型</p>
+<p>定界符：<code>&quot;&quot;或&#39;&#39;</code></p>
+<p>转义符：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">\n		回车换行</span><br><span class="line">\r		换行</span><br><span class="line">\t		水平制表符</span><br><span class="line">\&quot;		&quot;</span><br><span class="line">\&apos;		&apos;</span><br><span class="line">\\		\</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>布尔值型</p>
+<p>true | false 只有小写才是</p>
+<p><img src="/2019/06/03/JavaScript/3.png" alt></p>
+</li>
+</ul>
+<h2 id="2-复合数据类型"><a href="#2-复合数据类型" class="headerlink" title="2. 复合数据类型"></a>2. 复合数据类型</h2><ul>
+<li>对象(object)</li>
+<li>数组(array)</li>
+<li>函数(function)</li>
+</ul>
+<h2 id="3-特殊数据类型"><a href="#3-特殊数据类型" class="headerlink" title="3. 特殊数据类型"></a>3. 特殊数据类型</h2><ul>
+<li>无定义数据类型undefined</li>
+<li>空值null</li>
+</ul>
+<p>在JS中一共有六种数据类型</p>
+<ul>
+<li>String-&gt;字符串</li>
+<li>Number-&gt;数值</li>
+<li>Boolean-&gt;布尔值</li>
+<li>Null-&gt;空值</li>
+<li>Undefined-&gt;未定义</li>
+<li>Object-&gt;对象</li>
+</ul>
+<h2 id="4-变量"><a href="#4-变量" class="headerlink" title="4. 变量"></a>4. 变量</h2><ol>
+<li><p>声明变量</p>
+<p>通过<code>var</code>关键字声明变量，可以声明变量的同时给变量赋值，可以一次声明一个变量也可以一次声明多个变量，如果只声明变量未对其赋值，默认值为<code>undefined</code>，如果变量重名会产生覆盖。</p>
+<p><strong>注意：</strong>变量严格区分大小写，变量名称不要包含特殊字符，变量名称最好遵循驼峰标记法或下划线法，。变量名称最好含义明确。</p>
+</li>
+<li><p>变量在内存中的储存与释放</p>
+<ul>
+<li>收集方式</li>
+<li>收集内容</li>
+<li>回收算法</li>
+</ul>
+</li>
+</ol>
+<p><img src="/2019/06/03/JavaScript/2.png" alt></p>
+<h2 id="5-类型转换"><a href="#5-类型转换" class="headerlink" title="5. 类型转换"></a>5. 类型转换</h2><ul>
+<li><p>隐式转换</p>
+<ul>
+<li><p>转换成布尔类型假</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">underfined-&gt;false</span><br><span class="line">null	  -&gt;false</span><br><span class="line">数值型0或0.0或NaN-&gt;false</span><br><span class="line">字符串长度0-&gt;false</span><br><span class="line">其它对象-&gt;true</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>转换为数值型数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">undefined-NaN</span><br><span class="line">null-&gt;0</span><br><span class="line">true-&gt;1</span><br><span class="line">false-&gt;0</span><br><span class="line">内容为数字-&gt;数字，否则转换成NaN</span><br><span class="line">其它对象-&gt;NaN</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>转换为字符串型数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">undefined-&gt;&quot;undefined&quot;</span><br><span class="line">null-&gt;&quot;null&quot;</span><br><span class="line">true-&gt;&quot;true&quot;</span><br><span class="line">false-&gt;&quot;false&quot;</span><br><span class="line">数值型-&gt;NaN、0或者与数值对应的字符串</span><br><span class="line">其它对象-&gt;如果存在这个对象则转换为toString()方法的值，否则转换为Undefined</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>显示转换</p>
+<ul>
+<li><p>转换成数值</p>
+<ul>
+<li><p>Number函数强制转换成数值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">数值-&gt;转换成原来的的值</span><br><span class="line"></span><br><span class="line">字符串-&gt;如果可以解析为数值，则转换成数值，否则转换成NaN或者0</span><br><span class="line"></span><br><span class="line">true-&gt;1,false-&gt;0</span><br><span class="line"></span><br><span class="line">undefined-&gt;NaN</span><br><span class="line"></span><br><span class="line">null-&gt;0</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>转换成整形</p>
+<p><code>parseInt(string,radix);返回转换成浮点型的值</code></p>
+<p>当参数radix的值为0，或者没有设置这个参数，parseInt()会根据string来判断数字的基数。</p>
+<p>当忽略radix，Javascript默认数字的基数规则为：</p>
+<p>​    如果string以0开头，parseInt()会把string其余部分解析为十六进制的整数转化为十进制</p>
+<p>​    如果string以0开头，那么ECMAScript v3允许parseInt()的一个实现把其后的字符解析为八进制或十六进制的数</p>
+<p>​    如果string以1~9的数字开头，parseInt()将把他解析为十进制的整数</p>
+<p>​    字符串如果以合法字符开始，截取合法字符</p>
+<p>​    开头和结尾的空格是允许的</p>
+<p>​    如果字符串的第一个字符不能被转换为数字，parseInt()会返回NaN</p>
+<p>​    在字符串以”0”为开始时旧的浏览器默认使用八进制基数。ECMAScript 5，默认的是十进制的基数</p>
+</li>
+<li><p>转换成浮点型</p>
+<p><code>parseFloat(string);返回转换成浮点型的值</code></p>
+<p>该函数指定字符串的首个字符是否是数字。如果是，则对字符串进行解析，直到到达数字的末端为止，然后以数字返回该数字，而不是作为字符串。</p>
+</li>
+</ul>
+<p><strong>注意：</strong>Number函数将字符串转换为数值比parseInt函数严格很多。基本上只要有一个字符无法转换成数值，整个字符串就会被转换成NaN。</p>
+</li>
+</ul>
+<ul>
+<li><p>转换成字符串</p>
+<ul>
+<li><p>通过String函数转换成字符串</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">数值-&gt;数值本身</span><br><span class="line">字符串-&gt;字符串本身</span><br><span class="line">true-&gt;&quot;true&quot;</span><br><span class="line">false-&gt;&quot;false&quot;</span><br><span class="line">undefined-&gt;&quot;undefined&quot;</span><br><span class="line">null-&gt;&quot;null&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>转换成字符串型<code>toString()</code></p>
+</li>
+<li><p>转换成布尔类型</p>
+<p>通过Boolean函数强制转换成布尔值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">0、-0、0.0-&gt;false</span><br><span class="line">NaN-&gt;false</span><br><span class="line">空字符串-&gt;false</span><br><span class="line">undefined-&gt;false</span><br><span class="line">null-&gt;false</span><br></pre></td></tr></table></figure>
+<p><img src="/2019/06/03/JavaScript/4.png" alt></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="运算符与表达式"><a href="#运算符与表达式" class="headerlink" title="运算符与表达式"></a>运算符与表达式</h1><h2 id="1-表达式"><a href="#1-表达式" class="headerlink" title="1. 表达式"></a>1. 表达式</h2><p>表达式是用于Javascript脚本运行时进行计算的式子，可以包含常量、变量、运算符。</p>
+<h2 id="2-运算符"><a href="#2-运算符" class="headerlink" title="2. 运算符"></a>2. 运算符</h2><ul>
+<li><p>算术运算符</p>
+<p><code>+、-、*、/、%、++、--</code></p>
+<p><strong>注意：</strong><code>+</code>号用来连接两个字符串。只要+连接的操作数中有一个是字符串类型，JS就会自动把非字符串型数据作为字符串型数据来处理。JS代码的执行顺序是从左到右，所有在+连接的表达式中，遇到字符串型数据之前，所有出现的数值型数据（或者可以自动转换为数值型的数据）仍被作为数值来处理。为了避免这种情况，我们可以在表达式前拼一个空字符串。</p>
+<p><img src="/2019/06/03/JavaScript/5.png" alt></p>
+</li>
+<li><p>字符连接符</p>
+<p>通过<code>+</code>连接字符串</p>
+</li>
+<li><p>赋值运算符</p>
+<p><code>=、+=、-=、*=、/=、%=</code></p>
+</li>
+<li><p>比较运算符</p>
+<p><code>&gt;、&gt;=、&lt;、&lt;=、==、!=、===、!==</code></p>
+</li>
+</ul>
+<p><strong>注意：</strong>比较运算符的结果为布尔类型。<code>==</code>只比较值是否相等、<code>===</code>比较值和类型。</p>
+<ul>
+<li><p>逻辑运算符</p>
+<p><code>&amp;&amp;、||、！</code></p>
+</li>
+</ul>
+<p><strong>注意：</strong>逻辑运算符的结果为布尔类型，<code>&amp;&amp;</code>如果第一个表达式为false，造成短路，<code>||</code>如果第一个表达式为true，造成短路。</p>
+<ul>
+<li><p>三元运算符</p>
+<p><code>exp1?exp2:exp3</code></p>
+</li>
+<li><p>其他运算符</p>
+<ul>
+<li><p>逗号运算符</p>
+<p>逗号用来将多个表达式连接为一个个表达式，新表达式的值为最后一个表达式的值，多用在变量声明处</p>
+</li>
+<li><p>vold运算符</p>
+<p>vold运算符用来指明一个表达式无返回结果</p>
+</li>
+<li><p>typeof运算符</p>
+<p>typeof运算符用来返回同一个字符串，返回的是操作数的数据类型</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-运算符的优先级"><a href="#3-运算符的优先级" class="headerlink" title="3. 运算符的优先级"></a>3. 运算符的优先级</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">•	.、[]、 new</span><br><span class="line">•	()</span><br><span class="line">•	++、 --</span><br><span class="line">•	!、~、+(单目)、-(单目)、typeof、void、delete</span><br><span class="line">•	%、*、/</span><br><span class="line">•	+(双目)、-(双目)</span><br><span class="line">•	&lt;&lt; 、 &gt;&gt;、 &gt;&gt;&gt;</span><br><span class="line">•	&lt;、&lt;=、&gt;、&gt;=</span><br><span class="line">•	==、!==、===</span><br><span class="line">•	&amp;</span><br><span class="line">•	^</span><br><span class="line">•	|</span><br><span class="line">•	&amp;&amp;</span><br><span class="line">•	||</span><br><span class="line">•	?:</span><br><span class="line">•	=、+=、-=、*=、/=、%=、&lt;&lt;=、&gt;&gt;=、&gt;&gt;&gt;=、&amp;=、^=、|=</span><br><span class="line">•	,</span><br></pre></td></tr></table></figure>
+<p>通过()改变优先级</p>
+<p><img src="/2019/06/03/JavaScript/6.png" alt></p>
+<h2 id="4-流程控制"><a href="#4-流程控制" class="headerlink" title="4. 流程控制"></a>4. 流程控制</h2><ul>
+<li><p>条件语句</p>
+<p><code>if(exp)</code>执行一句代码</p>
+<p><code>if(exp){执行代码段;}</code></p>
+<p><code>if(exp){exp为true执行代码段}else{exp为false执行代码段;}</code></p>
+<p><code>if...elseif...</code>与<code>switch...case</code></p>
+<p><code>if</code>嵌套</p>
+<p><img src="/2019/06/03/JavaScript/7.png" alt></p>
+</li>
+<li><p>循环语句</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for循环</span><br><span class="line">for(exp1;exp2;exp3)&#123;</span><br><span class="line">    循环体;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>while循环</code></p>
+<p><code>do...while循环</code></p>
+</li>
+<li><p>特殊循环控制</p>
+<p><code>break终止循环</code></p>
+<p><code>continue</code>跳过当次循环，进入下次循环</p>
+</li>
+</ul>
+<p><img src="/2019/06/03/JavaScript/9.png" alt></p>
+<p><img src="/2019/06/03/JavaScript/8.png" alt></p>
+<p><img src="/2019/06/03/JavaScript/10.png" alt></p>
+<p><img src="/2019/06/03/JavaScript/11.png" alt></p>
+<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><h2 id="1-什么是函数？"><a href="#1-什么是函数？" class="headerlink" title="1. 什么是函数？"></a>1. 什么是函数？</h2><p>函数是完成某一功能的代码段，函数是可重复执行的代码段，函数方便管理和维护。</p>
+<h2 id="2-自定义函数"><a href="#2-自定义函数" class="headerlink" title="2. 自定义函数"></a>2. 自定义函数</h2><ul>
+<li><p>通过<code>function</code>关键字</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function 函数名称([参数,...])&#123;</span><br><span class="line">    代码段;</span><br><span class="line">    return 返回值；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>注意：函数名称不要包含特殊字符；函数名称最好含义精确；函数名称最好遵循驼峰标记法或者下划线法；函数名称严格区分大小写；函数名如果重复会产生覆盖；函数可以有参数也可以没有参数，可以有一个参数也可以有多个参数；函数通过return加返回值，如果没有return默认返回undefined；函数不调用不执行；</strong></p>
+</li>
+<li><p>匿名函数</p>
+<p>函数表达式可以存储在变量中，变量也可以作为一个函数使用</p>
+<p>可以将匿名函数作为参数传递给其它函数，接收方函数就可以通过所传递进来的函数完成某些功能</p>
+<p>可以通过匿名函数来执行某些一次性的任务</p>
+</li>
+<li><p>通过Function()构造函数</p>
+</li>
+</ul>
+<h2 id="3-调用函数"><a href="#3-调用函数" class="headerlink" title="3. 调用函数"></a>3. 调用函数</h2><ul>
+<li>作为一个函数调用</li>
+</ul>
+<p>通过函数名称()进行调用，如果有参数传递相应的参数即可</p>
+<p>在HTML中默认的全局对象是HTML页面本省，所以函数是在属于HTML页面。在浏览器中的页面对象是浏览器窗口（window对象），所以函数会自动变为window对象的函数。也可以通过window.函数名称()进行调用</p>
+<ul>
+<li>全局对象</li>
+</ul>
+<p>当函数没有被自身的对象调用时，this的值就会变成全局对象。在web浏览器中全局对象是浏览器窗口window对象。</p>
+<ul>
+<li>函数作为方法调用</li>
+</ul>
+<p>可以将函数定义为对象的方法进行调用</p>
+<ul>
+<li>使用构造函数调用函数</li>
+</ul>
+<p>如果函数调用前使用了new关键字，则调用了构造函数</p>
+<ul>
+<li>作为回调函数调用函数</li>
+</ul>
+<p>call()、apply()</p>
+<h2 id="4-参数"><a href="#4-参数" class="headerlink" title="4. 参数"></a>4. 参数</h2><p>函数可以有参数也可以没有参数，如果定义了参数，在调用函数的时侯没有传值，默认设置为undefined；在调用函数时如果传递参数超过了定义时参数，js会忽略掉多余参数；js中不能直接写默认值，可以通过arguments对象来实现默认值效果；可以通过arguments对象实现可变参数的函数；通过值传递参数在函数体内对变量做修改不会影响变量本身；通过对象传递参数在函数体内对变量做更改会影响变量本身；</p>
+<p><img src="/2019/06/03/JavaScript/12.png" alt></p>
+<h2 id="5-变量的作用域"><a href="#5-变量的作用域" class="headerlink" title="5. 变量的作用域"></a>5. 变量的作用域</h2><ul>
+<li>局部变量</li>
+</ul>
+<p>在函数体内声明的变量，仅在函数体内可以使用</p>
+<ul>
+<li>全局变量</li>
+</ul>
+<p>函数体外声明的变量，在变量声明开始到脚本结束都可以使用</p>
+<p><strong>注意：尽量控制全局变量的数量，容易引发BUG；最好总是使用var语句来声明变量</strong></p>
+<h2 id="6-JavaScript全局函数"><a href="#6-JavaScript全局函数" class="headerlink" title="6. JavaScript全局函数"></a>6. JavaScript全局函数</h2><p><code>isFinite(value)</code>检测某个值是否是无穷值，如果number是NaN或者+Infinity或者-Infinity的数，isFinite()返回false。</p>
+<p><code>isNaN(value)</code>检测某个值是否是NaN，isNaN()检测是否是非数值，如果值为NaN返回true，否则返回false。</p>
+<p><code>encodeURI(uri)</code>将字符串编码为URI，函数是不会转义的，使用encodeURIComponent()方法分别对特殊含义的ASCII标点符号进行编码；<code>decodeURI(uri)</code>解码某个编码的URI；</p>
+<p><code>encodeURIComponent(uri)</code>将字符串编码为URI组件;<code>decodeURIComponent(uri)</code>解码一个编码的URI组件；</p>
+<p><code>escape()</code>对字符串进行编码；<code>unescape()</code>解码由<code>escape()</code>编码的字符串；</p>
+<p><code>eval()</code>将Javascript字符串当作脚本来执行；注意：如果参数是一个表达式，eval()函数将执行表达式。如果参数是JavaScript语句，eval()将执行Javascript语句；eval()函数是一种由函数执行的动态代码，比直接执行脚本慢很多；慎重使用eval()函数，尽量不用，保证程序的安全性；</p>
+<p><code>Number(object)</code>把对象的值转换位数字；注意：如果对象的值无法转换为数字，Number()函数返回NaN；如果参数是Date对象，Number()返回从1970年1月1日到现在所经历的毫秒数；</p>
+<p><code>String()</code>把对象的值转换为字符串；String()函数返回与字符串对象的toString()方法一样；</p>
+<p><img src="/2019/06/03/JavaScript/13.png" alt></p>
+<h2 id="7-特殊形式的函数"><a href="#7-特殊形式的函数" class="headerlink" title="7. 特殊形式的函数"></a>7. 特殊形式的函数</h2><ul>
+<li><p>函数也是数据</p>
+<p>JavaScript中函数也是一种数据类型，只不过这种特殊类型有两个重要特性，即它们所包含的是代码、他们是可以执行的。</p>
+</li>
+<li><p>回调函数</p>
+<p>回调函数的优势：</p>
+<p>​    可以让我们在不做命名的情况下传递函数，这样可以节省全局变量；</p>
+<p>​    我们可以将一个函数调用操作委托给另一个函数，这样就可以节省一些代码编写；</p>
+<p>​    有助于提升性能；</p>
+</li>
+<li><p>自调函数</p>
+<p>​    优势：使用自调匿名函数不会产生任何全局变量；</p>
+<p>​    缺点：函数无法重复执行，适合执行一些一次性的或初始化的任务；</p>
+</li>
+<li><p>内部（私有）函数</p>
+<p>​    优势：确保全局名字空间的纯净性，防止命名冲突；私有性之后我们就可以选择只将一些必要函数暴露给外部，并保留属于自己的函数，使其不被其他应用程序所调；</p>
+</li>
+<li><p>返回函数的函数</p>
+<p><img src="/2019/06/03/JavaScript/14.png" alt></p>
+</li>
+<li><p>闭包</p>
+<p>​    作用域链</p>
+</li>
+</ul>
+<hr>
+
+      
+    </div>
+    
+    
+    
+	
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.gif" alt="smallpotato 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+	<div>
+		
+		
+		
+	</div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag"><i class="fa fa-tag"></i> javascript</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/19/计算机网络/" rel="next" title="计算机网络">
+                <i class="fa fa-chevron-left"></i> 计算机网络
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MzA4MS8xOTYyNw"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+    
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/4.gif" alt="smallpotato">
+            
+              <p class="site-author-name" itemprop="name">smallpotato</p>
+              <p class="site-description motion-element" itemprop="description">There is no end to learning</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/smallpotatody" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+          
+        
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.shiyanlou.com/" title="实验楼" target="_blank">实验楼</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript简介"><span class="nav-number">1.</span> <span class="nav-text">JavaScript简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-JavaScript简介"><span class="nav-number">1.1.</span> <span class="nav-text">1. JavaScript简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-如何使用JavaScript"><span class="nav-number">1.2.</span> <span class="nav-text">2. 如何使用JavaScript</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-代码屏蔽"><span class="nav-number">1.3.</span> <span class="nav-text">3. 代码屏蔽</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Javascript的基本语法"><span class="nav-number">1.4.</span> <span class="nav-text">4. Javascript的基本语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-标识符"><span class="nav-number">1.5.</span> <span class="nav-text">5. 标识符</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据类型与变量"><span class="nav-number">2.</span> <span class="nav-text">数据类型与变量</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-原始数据类型"><span class="nav-number">2.1.</span> <span class="nav-text">1. 原始数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-复合数据类型"><span class="nav-number">2.2.</span> <span class="nav-text">2. 复合数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-特殊数据类型"><span class="nav-number">2.3.</span> <span class="nav-text">3. 特殊数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-变量"><span class="nav-number">2.4.</span> <span class="nav-text">4. 变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-类型转换"><span class="nav-number">2.5.</span> <span class="nav-text">5. 类型转换</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运算符与表达式"><span class="nav-number">3.</span> <span class="nav-text">运算符与表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-表达式"><span class="nav-number">3.1.</span> <span class="nav-text">1. 表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-运算符"><span class="nav-number">3.2.</span> <span class="nav-text">2. 运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-运算符的优先级"><span class="nav-number">3.3.</span> <span class="nav-text">3. 运算符的优先级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-流程控制"><span class="nav-number">3.4.</span> <span class="nav-text">4. 流程控制</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数"><span class="nav-number">4.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-什么是函数？"><span class="nav-number">4.1.</span> <span class="nav-text">1. 什么是函数？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-自定义函数"><span class="nav-number">4.2.</span> <span class="nav-text">2. 自定义函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-调用函数"><span class="nav-number">4.3.</span> <span class="nav-text">3. 调用函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-参数"><span class="nav-number">4.4.</span> <span class="nav-text">4. 参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-变量的作用域"><span class="nav-number">4.5.</span> <span class="nav-text">5. 变量的作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-JavaScript全局函数"><span class="nav-number">4.6.</span> <span class="nav-text">6. JavaScript全局函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-特殊形式的函数"><span class="nav-number">4.7.</span> <span class="nav-text">7. 特殊形式的函数</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+  
+           <div>
+              <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="210" height="110" src="//music.163.com/outchain/player?type=2&id=446945324&auto=0&height=32"></iframe>
+           </div>
+           
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">smallpotato</span>
+  
+  
+  
+  
+</div>
+
+
+<!--
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+-->
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共46.3k字</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      本次访问人数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      本次访问总量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
