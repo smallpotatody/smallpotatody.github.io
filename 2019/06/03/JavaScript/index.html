@@ -106,7 +106,7 @@
 <meta property="og:image" content="https://smallpotatody.github.io/2019/06/03/JavaScript/12.png">
 <meta property="og:image" content="https://smallpotatody.github.io/2019/06/03/JavaScript/13.png">
 <meta property="og:image" content="https://smallpotatody.github.io/2019/06/03/JavaScript/14.png">
-<meta property="og:updated_time" content="2019-06-06T04:36:36.387Z">
+<meta property="og:updated_time" content="2019-06-08T02:33:10.947Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javaScript">
 <meta name="twitter:description" content="JavaScript简介1. JavaScript简介 JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。  Javascript包含了三个部分：ECMAScript、DOM和B">
@@ -400,7 +400,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  3.5k字
+                  4.3k字
                 </span>
               
 
@@ -416,7 +416,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  12分钟
+                  15分钟
                 </span>
               
             </div>
@@ -683,6 +683,8 @@
 <p>可以通过匿名函数来执行某些一次性的任务</p>
 </li>
 <li><p>通过Function()构造函数</p>
+<p>通过内置Javascript函数构造器（Function()）定义；</p>
+<p>​    <code>var myFunction</code></p>
 </li>
 </ul>
 <h2 id="3-调用函数"><a href="#3-调用函数" class="headerlink" title="3. 调用函数"></a>3. 调用函数</h2><ul>
@@ -748,9 +750,54 @@
 </li>
 <li><p>闭包</p>
 <p>​    作用域链</p>
+<p>​    词法作用域</p>
+<p><strong>注意：闭包会使得函数中的变量都被保存在内存中，内存消耗很大，所以不能滥用闭包，否则会造成网页的性能问题，在IE中中可能导致内存泄露。尽量再退出函数之前，将不使用的局部变量全部删除；闭包会在父函数的外部，改变父函数内部变量的值。所以，如果你把父函数当作对象（object）使用，把闭包函数当作它的公用方法（Public Method），把内部变量当作它的私有属性（private value），这时一定要小心，不要随便改变父函数内部变量的值。</strong></p>
 </li>
 </ul>
 <hr>
+<h1 id="Javascript中的对象"><a href="#Javascript中的对象" class="headerlink" title="Javascript中的对象"></a>Javascript中的对象</h1><h2 id="1-Javascript对象"><a href="#1-Javascript对象" class="headerlink" title="1. Javascript对象"></a>1. Javascript对象</h2><p>Javascript对象是基本数据类型之一，是复合类型；JavaScript中几乎所有事物都是对象；Javascript的对象是拥有属性和方法的数据。</p>
+<p>Javascript中的对象可以简单理解成”名称:值”对(name:value)</p>
+<p>​    JavaScript中的对象与这些概念类似：</p>
+<p>​        Perl和Ruby中的散列（哈希）</p>
+<p>​        C/C++中的散列表</p>
+<p>​        Java中的HashMap</p>
+<p>​        PHP中的关联数组</p>
+<p>​    名称：“名称是一个Javascript字符串”；</p>
+<p>​    注意：可以将属性名括在引号之间</p>
+<p>​        这三种形式一样：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var obj=&#123;prop:1&#125;</span><br><span class="line">var obj=&#123;&quot;prop&quot;:1&#125;</span><br><span class="line">var obj=&#123;&apos;prop&apos;:1&#125;</span><br></pre></td></tr></table></figure>
+<p>​        必须放到引号之间：</p>
+<p>​            如果属性名是Javascript的保留字之一</p>
+<p>​            如果属性名包含各种特殊字符（除字母、数字、下划线以外的字符）</p>
+<p>​            如果属性名以数字开头</p>
+<p>​            在ECMAScript5中，保留字可以用做不带引号的属性名，但对于ECMAScript3中必须使用引号括起来</p>
+<p>​            在ECMAScript5中对象直接量中的最后一个属性后的逗号将被忽略，在ECMAScript3的大部分实现中也可以忽略这个逗号，但在IE中报错。</p>
+<h2 id="2-JavaScript中的对象分类"><a href="#2-JavaScript中的对象分类" class="headerlink" title="2. JavaScript中的对象分类"></a>2. JavaScript中的对象分类</h2><ul>
+<li><p>内建对象</p>
+<p>​    通过<code>var obj={}</code>对象字面量（object literal）法</p>
+<p>​    通过<code>var obj=new Object()</code>创建</p>
+<p>​    通过构造函数创建对象：</p>
+<p>​        <code>function Person(){}</code></p>
+<p>​        <code>var Person=function(){}</code></p>
+<p>​        构造器属性(constructor property):</p>
+<p>​            当我们创建对象的时候，实际上同时也赋予了该对象一种特殊的属性，就是构造器属性；这个构造器属性实际上是一个指向用于创建该对象的构造器函数的引用</p>
+<p>​        通过instanceof操作符可以检测一个对象是否由某个指定的构造器函数创建的</p>
+<p><strong>注意：使用的时候通过new操作符得到对象：<code>var person1=new Person()</code>；用构造器创建对象的时候可以接收参数；构造器函数的首字母最好大写，区别其他的一班函数</strong></p>
+<p>​    通过Object.create创建对象</p>
+</li>
+<li><p>自定义对象</p>
+</li>
+</ul>
+<h2 id="3-访问对象的属性和方法"><a href="#3-访问对象的属性和方法" class="headerlink" title="3. 访问对象的属性和方法"></a>3. 访问对象的属性和方法</h2><p>属性：</p>
+<p>​    数据属性</p>
+<p>​    访问属性</p>
+<p>属性操作：</p>
+<p>​    访问属性：</p>
+<p>​        对象名.属性名</p>
+<p>​        对象名[属性名]</p>
+<p>​        当处于某个对象方法内部的时候，可以通过this来访问同一对象的属性</p>
+<p>​    添加属性：</p>
+<p>​        对象名</p>
 
       
     </div>
@@ -820,6 +867,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/11/全国计算机信息安全技术/" rel="prev" title="全国计算机信息安全技术">
+                全国计算机信息安全技术 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -910,7 +961,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -921,7 +972,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -932,7 +983,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -997,7 +1048,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript简介"><span class="nav-number">1.</span> <span class="nav-text">JavaScript简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-JavaScript简介"><span class="nav-number">1.1.</span> <span class="nav-text">1. JavaScript简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-如何使用JavaScript"><span class="nav-number">1.2.</span> <span class="nav-text">2. 如何使用JavaScript</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-代码屏蔽"><span class="nav-number">1.3.</span> <span class="nav-text">3. 代码屏蔽</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Javascript的基本语法"><span class="nav-number">1.4.</span> <span class="nav-text">4. Javascript的基本语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-标识符"><span class="nav-number">1.5.</span> <span class="nav-text">5. 标识符</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据类型与变量"><span class="nav-number">2.</span> <span class="nav-text">数据类型与变量</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-原始数据类型"><span class="nav-number">2.1.</span> <span class="nav-text">1. 原始数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-复合数据类型"><span class="nav-number">2.2.</span> <span class="nav-text">2. 复合数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-特殊数据类型"><span class="nav-number">2.3.</span> <span class="nav-text">3. 特殊数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-变量"><span class="nav-number">2.4.</span> <span class="nav-text">4. 变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-类型转换"><span class="nav-number">2.5.</span> <span class="nav-text">5. 类型转换</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运算符与表达式"><span class="nav-number">3.</span> <span class="nav-text">运算符与表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-表达式"><span class="nav-number">3.1.</span> <span class="nav-text">1. 表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-运算符"><span class="nav-number">3.2.</span> <span class="nav-text">2. 运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-运算符的优先级"><span class="nav-number">3.3.</span> <span class="nav-text">3. 运算符的优先级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-流程控制"><span class="nav-number">3.4.</span> <span class="nav-text">4. 流程控制</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数"><span class="nav-number">4.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-什么是函数？"><span class="nav-number">4.1.</span> <span class="nav-text">1. 什么是函数？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-自定义函数"><span class="nav-number">4.2.</span> <span class="nav-text">2. 自定义函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-调用函数"><span class="nav-number">4.3.</span> <span class="nav-text">3. 调用函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-参数"><span class="nav-number">4.4.</span> <span class="nav-text">4. 参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-变量的作用域"><span class="nav-number">4.5.</span> <span class="nav-text">5. 变量的作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-JavaScript全局函数"><span class="nav-number">4.6.</span> <span class="nav-text">6. JavaScript全局函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-特殊形式的函数"><span class="nav-number">4.7.</span> <span class="nav-text">7. 特殊形式的函数</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript简介"><span class="nav-number">1.</span> <span class="nav-text">JavaScript简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-JavaScript简介"><span class="nav-number">1.1.</span> <span class="nav-text">1. JavaScript简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-如何使用JavaScript"><span class="nav-number">1.2.</span> <span class="nav-text">2. 如何使用JavaScript</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-代码屏蔽"><span class="nav-number">1.3.</span> <span class="nav-text">3. 代码屏蔽</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Javascript的基本语法"><span class="nav-number">1.4.</span> <span class="nav-text">4. Javascript的基本语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-标识符"><span class="nav-number">1.5.</span> <span class="nav-text">5. 标识符</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据类型与变量"><span class="nav-number">2.</span> <span class="nav-text">数据类型与变量</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-原始数据类型"><span class="nav-number">2.1.</span> <span class="nav-text">1. 原始数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-复合数据类型"><span class="nav-number">2.2.</span> <span class="nav-text">2. 复合数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-特殊数据类型"><span class="nav-number">2.3.</span> <span class="nav-text">3. 特殊数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-变量"><span class="nav-number">2.4.</span> <span class="nav-text">4. 变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-类型转换"><span class="nav-number">2.5.</span> <span class="nav-text">5. 类型转换</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运算符与表达式"><span class="nav-number">3.</span> <span class="nav-text">运算符与表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-表达式"><span class="nav-number">3.1.</span> <span class="nav-text">1. 表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-运算符"><span class="nav-number">3.2.</span> <span class="nav-text">2. 运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-运算符的优先级"><span class="nav-number">3.3.</span> <span class="nav-text">3. 运算符的优先级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-流程控制"><span class="nav-number">3.4.</span> <span class="nav-text">4. 流程控制</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数"><span class="nav-number">4.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-什么是函数？"><span class="nav-number">4.1.</span> <span class="nav-text">1. 什么是函数？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-自定义函数"><span class="nav-number">4.2.</span> <span class="nav-text">2. 自定义函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-调用函数"><span class="nav-number">4.3.</span> <span class="nav-text">3. 调用函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-参数"><span class="nav-number">4.4.</span> <span class="nav-text">4. 参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-变量的作用域"><span class="nav-number">4.5.</span> <span class="nav-text">5. 变量的作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-JavaScript全局函数"><span class="nav-number">4.6.</span> <span class="nav-text">6. JavaScript全局函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-特殊形式的函数"><span class="nav-number">4.7.</span> <span class="nav-text">7. 特殊形式的函数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Javascript中的对象"><span class="nav-number">5.</span> <span class="nav-text">Javascript中的对象</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Javascript对象"><span class="nav-number">5.1.</span> <span class="nav-text">1. Javascript对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-JavaScript中的对象分类"><span class="nav-number">5.2.</span> <span class="nav-text">2. JavaScript中的对象分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-访问对象的属性和方法"><span class="nav-number">5.3.</span> <span class="nav-text">3. 访问对象的属性和方法</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1052,7 +1103,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共46.3k字</span>
+  <span class="post-count">博客全站共54.7k字</span>
 </div>
         
 <div class="busuanzi-count">
