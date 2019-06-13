@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://smallpotatody.github.io/"/>
-  <updated>2019-06-11T13:28:04.793Z</updated>
+  <updated>2019-06-13T09:04:43.645Z</updated>
   <id>https://smallpotatody.github.io/</id>
   
   <author>
@@ -15,6 +15,57 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用virtualbox安装centos</title>
+    <link href="https://smallpotatody.github.io/2019/06/13/%E7%94%A8virtualbox%E5%AE%89%E8%A3%85centos/"/>
+    <id>https://smallpotatody.github.io/2019/06/13/用virtualbox安装centos/</id>
+    <published>2019-06-13T06:41:41.000Z</published>
+    <updated>2019-06-13T09:04:43.645Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、安装Virtual-Box"><a href="#一、安装Virtual-Box" class="headerlink" title="一、安装Virtual Box"></a>一、安装Virtual Box</h1><h2 id="1-下载virtual-box"><a href="#1-下载virtual-box" class="headerlink" title="1.下载virtual box"></a>1.下载virtual box</h2><p><a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="noopener">官网</a><img src="/2019/06/13/用virtualbox安装centos/0.png" alt></p><h2 id="2-安装virtual-box"><a href="#2-安装virtual-box" class="headerlink" title="2.安装virtual box"></a>2.安装virtual box<img src="/2019/06/13/用virtualbox安装centos/1.png" alt><img src="/2019/06/13/用virtualbox安装centos/2.png" alt><img src="/2019/06/13/用virtualbox安装centos/3.png" alt><img src="/2019/06/13/用virtualbox安装centos/4.png" alt><img src="/2019/06/13/用virtualbox安装centos/5.png" alt><img src="/2019/06/13/用virtualbox安装centos/6.png" alt><img src="/2019/06/13/用virtualbox安装centos/7.png" alt><img src="/2019/06/13/用virtualbox安装centos/8.png" alt><img src="/2019/06/13/用virtualbox安装centos/9.png" alt></h2><p>安装完成后查看网络出现Virtual Box Host-Only Network表示安装成功</p><p><img src="/2019/06/13/用virtualbox安装centos/10.png" alt></p><h1 id="二、配置虚拟机centos"><a href="#二、配置虚拟机centos" class="headerlink" title="二、配置虚拟机centos"></a>二、配置虚拟机centos</h1><h2 id="1-下载镜像"><a href="#1-下载镜像" class="headerlink" title="1.下载镜像"></a>1.下载镜像</h2><p><a href="https://www.centos.org/download/" target="_blank" rel="noopener">官网</a></p><p>点击DVD ISO</p><p><img src="/2019/06/13/用virtualbox安装centos/1_0.png" alt></p><p>或者去官网选择版本下载<a href="https://wiki.centos.org/Download" target="_blank" rel="noopener"></a></p><p><img src="/2019/06/13/用virtualbox安装centos/1_2.png" alt></p><p>下拉选项找到你要下载的版本号进行下载</p><p><img src="/2019/06/13/用virtualbox安装centos/1_3.png" alt></p><p><img src="/2019/06/13/用virtualbox安装centos/1_4.png" alt></p><p>选择任意一个链接下载</p><p><img src="/2019/06/13/用virtualbox安装centos/1_1.png" alt></p><h2 id="2-新建虚拟机"><a href="#2-新建虚拟机" class="headerlink" title="2.新建虚拟机"></a>2.新建虚拟机</h2><p><img src="/2019/06/13/用virtualbox安装centos/1_5.png" alt></p><p>设置内存大小</p><p><img src="/2019/06/13/用virtualbox安装centos/1_6.png" alt></p><p>创建磁盘</p><p><img src="/2019/06/13/用virtualbox安装centos/1_7.png" alt></p><p><img src="/2019/06/13/用virtualbox安装centos/1_8.png" alt></p><p><img src="/2019/06/13/用virtualbox安装centos/1_9.png" alt></p><p><img src="/2019/06/13/用virtualbox安装centos/2_0.png" alt></p><p><img src="/2019/06/13/用virtualbox安装centos/2_1.png" alt></p><p><img src="/2019/06/13/用virtualbox安装centos/2_2.png" alt></p><h2 id="3-启动centos"><a href="#3-启动centos" class="headerlink" title="3.启动centos"></a>3.启动centos</h2><p><img src="/2019/06/13/用virtualbox安装centos/3_0.png" alt></p><p><img src="/2019/06/13/用virtualbox安装centos/3_1.png" alt></p><p><img src="/2019/06/13/用virtualbox安装centos/3_2.png" alt></p><p><img src="/2019/06/13/用virtualbox安装centos/3_3.png" alt></p><p><img src="/2019/06/13/用virtualbox安装centos/3_4.png" alt></p><p><img src="/2019/06/13/用virtualbox安装centos/3_5.png" alt></p><p><img src="/2019/06/13/用virtualbox安装centos/3_6.png" alt></p><p><img src="/2019/06/13/用virtualbox安装centos/3_7.png" alt></p><p><img src="/2019/06/13/用virtualbox安装centos/3_8.png" alt></p><p>安装成功，我安装的是无图形化的</p><p><img src="/2019/06/13/用virtualbox安装centos/3_9.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;一、安装Virtual-Box&quot;&gt;&lt;a href=&quot;#一、安装Virtual-Box&quot; class=&quot;headerlink&quot; title=&quot;一、安装Virtual Box&quot;&gt;&lt;/a&gt;一、安装Virtual Box&lt;/h1&gt;&lt;h2 id=&quot;1-下载virtual-b
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://smallpotatody.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://smallpotatody.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux学习</title>
+    <link href="https://smallpotatody.github.io/2019/06/12/Linux%E5%AD%A6%E4%B9%A0/"/>
+    <id>https://smallpotatody.github.io/2019/06/12/Linux学习/</id>
+    <published>2019-06-12T12:23:44.000Z</published>
+    <updated>2019-06-13T06:10:10.680Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、Linux发展史"><a href="#一、Linux发展史" class="headerlink" title="一、Linux发展史"></a>一、Linux发展史</h1><p>1970年元年</p><h1 id="二、Linux系统安装"><a href="#二、Linux系统安装" class="headerlink" title="二、Linux系统安装"></a>二、Linux系统安装</h1><p>安装方式：</p><p>​    真机模式</p><p>​    虚拟机安装：通过一些特定的手段，来进行模拟安装</p><p>​        VMware workstation的安装：<a href="https://www.jianshu.com/p/a979f489b47b" target="_blank" rel="noopener">VMware Workstation pro 15破解版安装</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;一、Linux发展史&quot;&gt;&lt;a href=&quot;#一、Linux发展史&quot; class=&quot;headerlink&quot; title=&quot;一、Linux发展史&quot;&gt;&lt;/a&gt;一、Linux发展史&lt;/h1&gt;&lt;p&gt;1970年元年&lt;/p&gt;
+&lt;h1 id=&quot;二、Linux系统安装&quot;&gt;&lt;a hr
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://smallpotatody.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://smallpotatody.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>linux常用命令</title>
