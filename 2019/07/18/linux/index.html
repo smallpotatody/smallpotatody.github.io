@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "8f2a50d5"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=5.1.4">
+
+
+
+
+
+
+  <meta name="keywords" content="Linux,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="小土豆" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="终端tty控制台终端 ​    tty1-tty6 ​    tty1既是图形界面（默认） ​    图形界面切换到字符界面终端：ctrl + shift + alt + F2~F6 ​    字符界面切花到图形界面终端：alt + F1 pts虚拟终端 ​    ctrl + alt + t 打开新终端 查看系统和BIOS硬件时间：指的是bios时间  Linux如何获得帮助？方法1：加参数-h">
+<meta name="keywords" content="Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux">
+<meta property="og:url" content="https://smallpotatody.github.io/2019/07/18/linux/index.html">
+<meta property="og:site_name" content="小土豆">
+<meta property="og:description" content="终端tty控制台终端 ​    tty1-tty6 ​    tty1既是图形界面（默认） ​    图形界面切换到字符界面终端：ctrl + shift + alt + F2~F6 ​    字符界面切花到图形界面终端：alt + F1 pts虚拟终端 ​    ctrl + alt + t 打开新终端 查看系统和BIOS硬件时间：指的是bios时间  Linux如何获得帮助？方法1：加参数-h">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/1.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/2.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/3.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/4.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/5.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/6.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/7.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/8.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/9.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/10.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/11.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/12.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/13.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/14.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/15.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/16.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/17.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/18.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/19.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/20.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/21.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/22.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/23.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/24.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/25.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/26.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/27.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/28.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/30.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/31.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/32.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/33.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/34.png">
+<meta property="og:image" content="https://smallpotatody.github.io/2019/07/18/linux/35.png">
+<meta property="og:updated_time" content="2019-07-19T08:48:13.490Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="linux">
+<meta name="twitter:description" content="终端tty控制台终端 ​    tty1-tty6 ​    tty1既是图形界面（默认） ​    图形界面切换到字符界面终端：ctrl + shift + alt + F2~F6 ​    字符界面切花到图形界面终端：alt + F1 pts虚拟终端 ​    ctrl + alt + t 打开新终端 查看系统和BIOS硬件时间：指的是bios时间  Linux如何获得帮助？方法1：加参数-h">
+<meta name="twitter:image" content="https://smallpotatody.github.io/2019/07/18/linux/1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://smallpotatody.github.io/2019/07/18/linux/">
+
+
+
+
+
+  <title>linux | 小土豆</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+  <a href="https://github.com/smallpotatody" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#FD6C6C; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">小土豆</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">-博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://smallpotatody.github.io/2019/07/18/linux/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="smallpotato">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/4.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小土豆">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">linux</h1>
+        
+
+        <div class="post-meta">
+			
+
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于&#58;</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-18T10:37:27+08:00">
+                2019-07-18
+              </time>
+            
+
+            
+
+            
+          </span>
+		  
+		  
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+                               
+                <span class="post-meta-item-text">分类于&#58;</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本文总阅读量
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  3.8k字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  14分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="终端"><a href="#终端" class="headerlink" title="终端"></a>终端</h2><p>tty控制台终端</p>
+<p>​    tty1-tty6</p>
+<p>​    tty1既是图形界面（默认）</p>
+<p>​    图形界面切换到字符界面终端：ctrl + shift + alt + F2~F6</p>
+<p>​    字符界面切花到图形界面终端：alt + F1</p>
+<p>pts虚拟终端</p>
+<p>​    ctrl + alt + t 打开新终端</p>
+<p>查看系统和BIOS硬件时间：指的是bios时间</p>
+<p><img src="/2019/07/18/linux/1.png" alt></p>
+<h2 id="Linux如何获得帮助？"><a href="#Linux如何获得帮助？" class="headerlink" title="Linux如何获得帮助？"></a>Linux如何获得帮助？</h2><p>方法1：加参数-h 或–help；</p>
+<p><img src="/2019/07/18/linux/2.png" alt></p>
+<p>方法2：man 加命令；</p>
+<p><img src="/2019/07/18/linux/3.png" alt></p>
+<h2 id="关机命令："><a href="#关机命令：" class="headerlink" title="关机命令："></a>关机命令：</h2><p>shutdown、initial、reboot</p>
+<p>shutdown 作用：关机、重启、定时关机</p>
+<p>语法：<code>#shutdown [选项]</code></p>
+<p>选项：</p>
+<p>​    -r：重新启动计算机</p>
+<p>​    -h：关机</p>
+<p>​    -h 时间：定时关机</p>
+<p>​    -c：取消之前的定时关机</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">shutdown -h now   #马上关机</span><br><span class="line">shutdown -h +10   #10分钟后关机</span><br><span class="line">shutdown -h 20:02 #在20：02时关机</span><br></pre></td></tr></table></figure>
+<p><img src="/2019/07/18/linux/4.png" alt></p>
+<p>init 作用：切换运行级别</p>
+<p>语法：<code>init 0~6</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">init 0   #命令用于立即将系统运行级别切换为0，即关机；</span><br><span class="line">init 6   #命令用于将系统运行级别切换为6，即重新启动；</span><br></pre></td></tr></table></figure>
+<p>runlevel 作用：查看当前运行级别</p>
+<p>语法：<code>#runlevel</code></p>
+<p><img src="/2019/07/18/linux/5.png" alt></p>
+<p>!$；表示上一个命令的最后一个参数；</p>
+<p>同一目录下文件和文件名不一样。</p>
+<h2 id="字符操作："><a href="#字符操作：" class="headerlink" title="字符操作："></a>字符操作：</h2><p>i  当前插入</p>
+<p>I  行首插入</p>
+<p>a  当前字符之后插入</p>
+<p>A  行尾插入</p>
+<p>o  下一行插入</p>
+<p>O  上一行插入</p>
+<p> x  向后删除一个字符</p>
+<p> X  向前删除一个字符</p>
+<p> u  撤销一步</p>
+<h2 id="词操作"><a href="#词操作" class="headerlink" title="词操作"></a>词操作</h2><p>dw  删除一个词，删除时要将光标移动到这个词的行首。另外，如果光标不在行首，则删除光标之后的字母。</p>
+<p>yw  复制一个词</p>
+<h2 id="快操作"><a href="#快操作" class="headerlink" title="快操作"></a>快操作</h2><p>大D或d + $ 删至行尾 d+^删至行首</p>
+<p>y + $ 复制至尾  y + ^ 复制至首 </p>
+<h2 id="v模式"><a href="#v模式" class="headerlink" title="v模式"></a>v模式</h2><p>进入v模式，移动光标选择区域</p>
+<p>编程时需要进行多行注释：</p>
+<ol>
+<li>注释：CTRL + v进入列编辑模式</li>
+<li>向下或向上移动光标</li>
+<li>把需要注释的行的开头标记起来</li>
+<li>然后按大写的I</li>
+<li>再插入注释符，比如’#’</li>
+<li>再按Esc，就会全部注释了</li>
+</ol>
+<h2 id="linux文件系统由三部分组成：文件名，inode，block（真正存数据）"><a href="#linux文件系统由三部分组成：文件名，inode，block（真正存数据）" class="headerlink" title="linux文件系统由三部分组成：文件名，inode，block（真正存数据）"></a><strong>linux文件系统由三部分组成：文件名，inode，block（真正存数据）</strong></h2><p>indoe：文件数据都储存在’块中‘，那么很显然，我们还必须找一个地方储存文件的元信息，比如文件的创建者、文件的创建日期、文件的大小等等。这种储存文件元信息的区域叫做inode，中文名译为”索引节点“。</p>
+<h2 id="inode的内容"><a href="#inode的内容" class="headerlink" title="inode的内容"></a>inode的内容</h2><p>inode包含文件的元信息</p>
+<p>​    文件的字节数</p>
+<p>​    文件拥有者的User ID</p>
+<p>​    文件的Group ID</p>
+<p>​    文件的读、写、执行权限</p>
+<p>​    文件的时间戳，共有三个：ctime指inode上一次变动的时间，mtime指文件内容上一次变动的时间，atime指文件上依次打开的时间。</p>
+<p>​    链接数，即有多少文件名指向这个inode</p>
+<p>​    文件数据block的位置</p>
+<p>使用stat命令查看文件inode信息</p>
+<p><img src="/2019/07/18/linux/6.png" alt></p>
+<h2 id="inode的大小"><a href="#inode的大小" class="headerlink" title="inode的大小"></a>inode的大小</h2><p>inode也会消耗硬盘空间，所以硬盘格式化的时候，操作系统自动将硬盘分成两个区域。一个是数据区，存放文件数据；另一个是inode区（inode table），存放inode所包含的信息。</p>
+<p>查看每个硬盘分区的inode总数和已经使用的数量，可以使用df命令。</p>
+<p><img src="/2019/07/18/linux/7.png" alt></p>
+<p>每个文件最少有一个inode号。操作系统号码来识别不同文件。</p>
+<p>使用<code>ls -i</code>命令，可以看到文件名对应的inode号码：</p>
+<p><img src="/2019/07/18/linux/8.png" alt></p>
+<p><strong>Linux中ctime，mtime，atime的区别</strong></p>
+<p>ctime：”改变时间（change time）“</p>
+<p>mtime：”修改时间（modification time）“</p>
+<p>改变和修改之间的区别在于是改文件的属性还是更改它的内容。chmod a-w myfile，那么这是一个改变；</p>
+<p>echo foo &gt;&gt; myfile,那么这是一个修改。</p>
+<p>改变是文件的索引节点发生来改变；修改是文本本身的内容发生了变化。</p>
+<p>atime：”访问时间（access time）“</p>
+<p>访问时间是文件最后一次被读取时间。因此阅读一个文件会更新它的访问时间。但是它的修改时间和改变时间没有变。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ls -lc filename            #列出文件的ctime</span><br><span class="line">ls -lu filename            #列出文件的atime</span><br><span class="line">ls -l filename             #列出文件的mtime</span><br></pre></td></tr></table></figure>
+<h2 id="ext4文件系统比ext3文件系统强的方面："><a href="#ext4文件系统比ext3文件系统强的方面：" class="headerlink" title="ext4文件系统比ext3文件系统强的方面："></a>ext4文件系统比ext3文件系统强的方面：</h2><ol>
+<li>ext4与ext3兼容</li>
+<li>更大的文件系统和更大的文件。交织Ext3目前所支持的最大16TB文件系统和最大2</li>
+</ol>
+<p>TB文件，Ext4分别支持1EB（1,048,576TB，1EB=1024PB，1PB=1024TB）的文件系统，以及16TB的文件。</p>
+<ol start="3">
+<li>无限数量的子目录。Ext3目前只支持32,000个子目录，而Ext4支持无限数量的子目录。</li>
+<li>”无日志“（No Journaling）模式。日志总归有一些开销，Ext4允许关闭日志，以便某些有特殊需求的用户可以借此提升性能。</li>
+</ol>
+<p>LUKS（Linux UNified Key Setup）为Linux硬盘加密提供了一种标准</p>
+<p>​    cryptsetup是linux下的一个分区加密工具，是在经过加密的块设备上再创建文件系统，然后再进行挂在使用，可以达到最底层的加密。</p>
+<p>首先对硬盘进行分区：</p>
+<p>​    fdisk /dev/sdb</p>
+<p>​    fdisk                #分出一个sdb1</p>
+<p>​    fdisk  -l</p>
+<p>下面开始对分区进行加密</p>
+<p><code>#cryptsetup luksFormat/dev/sdb1</code>设置为加密分区</p>
+<p>​    出现要输入yes的地方一定要输入YES</p>
+<p>映射</p>
+<p><code>cryptsetup luksOpen /dev/sdb1 disk1</code>#将分区映射成disk1，则这个设置就在/dev/mapper中</p>
+<p><code>mkfs.ext4 /dev/mapper/disk1</code> 格式化加密分区</p>
+<p><code>mount /dev/mapper/disk1/mnt/luks</code>  挂载加密分区</p>
+<p>df查看分区挂载情况</p>
+<p><code>umount /dev/mapper/disk1</code>   卸载分区</p>
+<p><code>cryptsetup luksClose/dev/mapper/disk1</code>  关闭加密分区</p>
+<p>生成加密分区的密码文件，实现开机自动挂载加密分区</p>
+<p><code>vi /etc/crpttab</code>  写入：</p>
+<p><code>disk1 /dev/sdb1           /root/key</code></p>
+<p>如果这里写none的话，当系统启动时在读取分区时候，会一直停在那，等待输入密码</p>
+<p><code>echo -n &quot;123&quot; &gt; /root/key</code>         生成密码文件</p>
+<p><code>chmod 700 /root/key</code>          修改权限</p>
+<p><code>cryptsetup luksAddKey/dev/sdb1/root/key</code>   添加口令到/dev/sdb1中</p>
+<p><code>cat /etc/crypttab</code></p>
+<p><code>disk1 /dev/sdb1         /root/key</code></p>
+<p>vi /etc/fstab自动挂载文件</p>
+<p>​    /dev/mapper/disk1 /mnt/luks  ext4 defaults  0  0</p>
+<p>mount -a             重新挂载/etc/fstab里的内容，如果报错的话就需要重启系统</p>
+<h2 id="转码"><a href="#转码" class="headerlink" title="转码"></a>转码</h2><p><code>iconv -f gb2312 1.txt -o 2.txt</code></p>
+<p>解决将公司服务器上脚本导到windows上打开串行问题</p>
+<p>这是因为windows和Linux处理回车不同。</p>
+<p><code>unix2dos 文件名</code></p>
+<h2 id="用户分类："><a href="#用户分类：" class="headerlink" title="用户分类："></a>用户分类：</h2><p>根据账号的位置：本地帐号、远程（域）账号。</p>
+<p>根据账号功能：</p>
+<p>​    超级用户（root）    UID ：0</p>
+<p>​    普通用户</p>
+<p>​        系统用户 UID：1-499</p>
+<p>​        本地用户 UID：500+</p>
+<h2 id="组分类："><a href="#组分类：" class="headerlink" title="组分类："></a>组分类：</h2><p>根据账号的位置：本地组、远程（域）组。</p>
+<p>根据账号功能：</p>
+<p>​    超级用户组（root）    UID ：0</p>
+<p>​    普通用户组</p>
+<p>​        系统用户组 UID：1-499</p>
+<p>​        本地用户组 UID：500+</p>
+<p>关于系统用户和组的相关配置文件：</p>
+<p>​        账号信息    密码信息</p>
+<p>用户：     /etc/passwd     /etc/shadow</p>
+<p>组：         /etc/group        /etc/gshadow</p>
+<h2 id="passwd中的伪用户："><a href="#passwd中的伪用户：" class="headerlink" title="passwd中的伪用户："></a>passwd中的伪用户：</h2><p>/etc/passwd文件中常见的伪用户</p>
+<table>
+<thead>
+<tr>
+<th>伪用户</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bin</td>
+<td>拥有可执行的用户命令文件</td>
+</tr>
+<tr>
+<td>sys</td>
+<td>拥有系统文件</td>
+</tr>
+<tr>
+<td>adm</td>
+<td>拥有账户文件</td>
+</tr>
+<tr>
+<td>uucp</td>
+<td>UUCP使用</td>
+</tr>
+<tr>
+<td>Ip</td>
+<td>Ip或Ipd子系统使用</td>
+</tr>
+<tr>
+<td>nobody</td>
+<td>NFS使用</td>
+</tr>
+</tbody>
+</table>
+<p>源码安装nginx，运行nginx web服务默认使用nobody用户</p>
+<p><img src="/2019/07/18/linux/9.png" alt></p>
+<p>​                 </p>
+<p><img src="/2019/07/18/linux/10.png" alt></p>
+<p>用户名：密码：最近更改密码的日期（从19700101开始计算）：密码不能更改的天数（最近被改过之后几天后才可以再次更改。0表示随时可以修改）：密码过期时间（多少天后必须再次修改）：密码需要更改期限到来前7发出警告：宽限天数（密码过了几天后还能改密码）：账号过期时间：保留</p>
+<h2 id="为多个用户输入初始密码"><a href="#为多个用户输入初始密码" class="headerlink" title="为多个用户输入初始密码"></a>为多个用户输入初始密码</h2><p><code>#echo 密码 | passwd --stdin 用户名</code> # –stdin非交互添加密码</p>
+<h2 id="Linux用户密码加密"><a href="#Linux用户密码加密" class="headerlink" title="Linux用户密码加密"></a>Linux用户密码加密</h2><p><img src="/2019/07/18/linux/11.png" alt></p>
+<h2 id="控制添加用户规则的文件"><a href="#控制添加用户规则的文件" class="headerlink" title="控制添加用户规则的文件"></a>控制添加用户规则的文件</h2><p><img src="/2019/07/18/linux/12.png" alt></p>
+<p>HOME=/home          #哪个目录作为用户主目录存放目录。如果你不想让用户家目录在/home下，可以修改这个地方。</p>
+<p>SHELL=/bin/bash     #默认shell使用哪个</p>
+<p>SKEL=/etc/skel          #模板目录</p>
+<h2 id="查看用户信息相关命令："><a href="#查看用户信息相关命令：" class="headerlink" title="查看用户信息相关命令："></a>查看用户信息相关命令：</h2><p><code>id 用户名</code></p>
+<p><code>whoami</code></p>
+<p><code>w</code></p>
+<p><code>who</code></p>
+<p><img src="/2019/07/18/linux/13.png" alt></p>
+<h2 id="用户切换"><a href="#用户切换" class="headerlink" title="用户切换"></a>用户切换</h2><p><code>#su [-] username</code>加-用户和shell环境一起切换。</p>
+<hr>
+<h2 id="进入单用户找回root身份"><a href="#进入单用户找回root身份" class="headerlink" title="进入单用户找回root身份"></a>进入单用户找回root身份</h2><p>编辑/etc/passwd，<code>vim /etc/passwd</code>将root​：x：变成root：：​</p>
+<p><img src="/2019/07/18/linux/14.png" alt></p>
+<h2 id="文件基本权限-不适用于root"><a href="#文件基本权限-不适用于root" class="headerlink" title="文件基本权限(不适用于root)"></a>文件基本权限(不适用于root)</h2><p><img src="/2019/07/18/linux/15.png" alt></p>
+<p>对于文件：</p>
+<p>​    r读    w写    x执行</p>
+<p>对于目录：</p>
+<p>​    r读（看到目录里面有什么）</p>
+<p>​    w建文件、删除、移动</p>
+<p>​    x进入    </p>
+<h2 id="修改权限命令"><a href="#修改权限命令" class="headerlink" title="修改权限命令"></a>修改权限命令</h2><p><code>chmod</code></p>
+<p>作用：修改文件权限</p>
+<p>u + r</p>
+<p>g - w</p>
+<p>o = x</p>
+<p>a + x  a表示所有（u、g、o）</p>
+<p><img src="/2019/07/18/linux/16.png" alt></p>
+<p>修改文件夹权限</p>
+<p><img src="/2019/07/18/linux/17.png" alt></p>
+<h2 id="使用数字表示权限"><a href="#使用数字表示权限" class="headerlink" title="使用数字表示权限"></a>使用数字表示权限</h2><p>rwx</p>
+<table>
+<thead>
+<tr>
+<th>r–</th>
+<th>-w-</th>
+<th>–x</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100</td>
+<td>010</td>
+<td>001</td>
+</tr>
+<tr>
+<td>r=4</td>
+<td>w=2</td>
+<td>x=1</td>
+</tr>
+</tbody>
+</table>
+<p>rw-的值是6 ，rwx r-x r-x的值是755</p>
+<p><img src="/2019/07/18/linux/18.png" alt></p>
+<p><code>chmod a=rwx a.txt</code>    等于   <code>chmod 777 a.txt</code>                </p>
+<h2 id="chown"><a href="#chown" class="headerlink" title="chown"></a>chown</h2><p>作用：修改文件拥有者和所属组</p>
+<p>语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">chown USER:GROUP 对象</span><br><span class="line">chown USER 对象</span><br><span class="line">chown :GROUP 对象</span><br></pre></td></tr></table></figure>
+<p>-R 递归（目录下的所有内容全部更改，否则只修改目录）</p>
+<p><img src="/2019/07/18/linux/19.png" alt></p>
+<p>设置文件默认权限的补码：</p>
+<p>系统用户：#umask 022</p>
+<p>普通用户：#umask 002</p>
+<p><img src="/2019/07/18/linux/20.png" alt></p>
+<p>计算方法：</p>
+<p>​    文件默认权限=666 - umask值   666-022=644</p>
+<p>​    目录默认权限=777 - umask值</p>
+<p>注意：这是一个好的记忆方法，但不严谨。</p>
+<p>umask掩码为033. 666 - 033=633 结果为：644</p>
+<p>110110110（666）与111100100（033的反码）相与得到110100100（644）</p>
+<p><img src="/2019/07/18/linux/21.png" alt></p>
+<h2 id="特殊权限"><a href="#特殊权限" class="headerlink" title="特殊权限"></a>特殊权限</h2><p>SUID                    SGID                Stickybit</p>
+<p>s对应的数值为：4   s，2    t，1</p>
+<p>SUID：</p>
+<p>限定：只能设置在二进制可执行程序上面。对目录文本设置无效。</p>
+<p>功能：程序运行时的权限从执行者变更成程序的所有者。</p>
+<p>SGID：</p>
+<p>限定：既可以给二进制可执行程序设置，也可以给目录设置。</p>
+<p>功能：在设置了SGID权限的目录下建立文件是，新创建的文件的所属组会继承上级目录的所属组。</p>
+<p>Stickybit：</p>
+<p>限定：只作用于目录</p>
+<p>功能：目录下创建的文件只有root、文件创建者、目录所有者才能删除。</p>
+<p>一个让root都无法删除的文件</p>
+<p>chattr                   lsattr</p>
+<p>+a   只能追加内容</p>
+<p>+i    不能被修改</p>
+<p><img src="/2019/07/18/linux/22.png" alt></p>
+<h2 id="tar命令"><a href="#tar命令" class="headerlink" title="tar命令"></a>tar命令</h2><p>作用：打包、压缩文件</p>
+<p><img src="/2019/07/18/linux/23.png" alt></p>
+<p>#c      create 创建</p>
+<p>#v       详细</p>
+<p>#f         filename</p>
+<h2 id="file命令"><a href="#file命令" class="headerlink" title="file命令"></a>file命令</h2><p>作用：查看文件类型</p>
+<p>用法：file 文件路劲</p>
+<p><img src="/2019/07/18/linux/24.png" alt></p>
+<p>注意：Linux系统不根据后缀名识别文件类型</p>
+<p>不解包，查看tar中的内容：</p>
+<p>​    <code>tar -tvf a.tar</code></p>
+<p><img src="/2019/07/18/linux/25.png" alt></p>
+<p>解包：</p>
+<p>​    <code>tar -xvf a.tar</code></p>
+<p><img src="/2019/07/18/linux/26.png" alt></p>
+<p>指定解压路径：</p>
+<p>​    <code>tar -xf a.tar -C /home</code></p>
+<p><img src="/2019/07/18/linux/27.png" alt></p>
+<h2 id="tar归档-压缩"><a href="#tar归档-压缩" class="headerlink" title="tar归档+压缩"></a>tar归档+压缩</h2><p>格式（后缀名）:.tar.gz 或 .tgz</p>
+<p>语法：<code>tar cvzf   newfile.tar.gz SOUPCE</code></p>
+<p><img src="/2019/07/18/linux/28.png" alt></p>
+<p><code>tar -zxf a.tar -C /home</code></p>
+<h2 id="bz2-归档-压缩"><a href="#bz2-归档-压缩" class="headerlink" title="bz2 归档+压缩"></a>bz2 归档+压缩</h2><p><code>tar -cjvf a.tar.bz2 /root</code></p>
+<p>解压：<code>tar jxf a.tar.bz2 -C /root/a</code></p>
+<h2 id="zip软件包解压缩命令"><a href="#zip软件包解压缩命令" class="headerlink" title="zip软件包解压缩命令"></a>zip软件包解压缩命令</h2><p>zip是压缩程序，unzip是解压程序。</p>
+<p>压缩文件：</p>
+<p>​    <code>zip a.zip /etc/passwd</code></p>
+<p>压缩目录：</p>
+<p>​    <code>zip -r  a.zip /root</code></p>
+<p>解压缩：</p>
+<p>​    <code>unzip a.zip</code></p>
+<p>​    <code>unzip  a.zip -d /home</code></p>
+<h2 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h2><p>查看进程树：</p>
+<p>pstree树型结构显示系统进程信息</p>
+<p>-p显示进程号</p>
+<h2 id="ps命令"><a href="#ps命令" class="headerlink" title="ps命令"></a>ps命令</h2><p><img src="/2019/07/18/linux/30.png" alt></p>
+<p>USER：运行此进程的用户名</p>
+<p>PID：该process的号码</p>
+<p>%CPU：该进程使用掉的CPU资源百分比</p>
+<p>%MEM：该进程所占用的物理内存百分比</p>
+<p>VSZ：该进程使用掉的虚拟内存量（kbytes）</p>
+<p>RSS：该进程占用的固定的内存量（kbytes）</p>
+<p>TTY：该进程是在哪个终端上面运作，若与终端机无关，则显示？，另外，tty1~tty6市本级上面的登入者程序，若为pts/0等等的，则表示为由网络连接进主机的程序。</p>
+<p>STAT：该进程目前的状态，Linux进程有5种基本状态：</p>
+<p>​    R：（正在运行或在运行队列中等待）；</p>
+<p>​    S：该程序目前正在睡眠中，但是可被某些讯号（signal）唤醒。</p>
+<p>​    T：该程序目前暂停了；</p>
+<p>​    Z：该程序应该已经终止，但是其父程序却无法正常的终止它，造成zombie（僵尸）程序的状态；</p>
+<p>​    D：不可中断状态；</p>
+<p>ctrl + c是发送SIGINT信号，终止一个进程</p>
+<p>ctrl + z是发送SIGSTOP信号，挂起一个进程。</p>
+<table>
+<thead>
+<tr>
+<th>&lt;</th>
+<th>高优先级的</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N</td>
+<td>低优先级的</td>
+</tr>
+<tr>
+<td>L</td>
+<td>有内存分页但是带锁</td>
+</tr>
+<tr>
+<td>s</td>
+<td>包含子进程</td>
+</tr>
+<tr>
+<td>I</td>
+<td>多线程</td>
+</tr>
+<tr>
+<td>+</td>
+<td>前台程序（）</td>
+</tr>
+</tbody>
+</table>
+<p>START：该进程被触发启动的时间</p>
+<p>TIME：该进程实际使用CPU运作的时间</p>
+<p>COMMAND：该进程的实际指令</p>
+<p>ps -aux是用BSD的格式来显示进程</p>
+<p>ps -ef是用标准的格式显示进程</p>
+<p><img src="/2019/07/18/linux/31.png" alt></p>
+<h2 id="top命令"><a href="#top命令" class="headerlink" title="top命令"></a>top命令</h2><p>作用：动态查看进程</p>
+<p>统计信息区前五行是系统整体的统计信息</p>
+<p>1.第一行是任务队列信息，同<code>uptime</code>命令的执行结果相同</p>
+<p><img src="/2019/07/18/linux/32.png" alt></p>
+<table>
+<thead>
+<tr>
+<th>14:35:50</th>
+<th>当前时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>up  3:25</td>
+<td>系统运行时间，格式为时：分</td>
+</tr>
+<tr>
+<td>2 users</td>
+<td>当前登录用户数</td>
+</tr>
+<tr>
+<td>load average: 0.08, 0.03, 0.05</td>
+<td>系统负载，即任务队列的平均长度。三个值分别为1分钟、5分钟、15分钟前到现在的平均值。</td>
+</tr>
+</tbody>
+</table>
+<p>2.第二、三行为进程和CPU的信息</p>
+<table>
+<thead>
+<tr>
+<th>Tasks: 198 total</th>
+<th>进程总数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 running</td>
+<td>正在运行的进程数</td>
+</tr>
+<tr>
+<td>197 sleeping</td>
+<td>睡眠进程数</td>
+</tr>
+<tr>
+<td>0 stopped</td>
+<td>停止进程数</td>
+</tr>
+<tr>
+<td>0 zombie</td>
+<td>僵尸进程数</td>
+</tr>
+<tr>
+<td>%Cpu(s):  1.3 us</td>
+<td>系统用户进程使用CPU百分比</td>
+</tr>
+<tr>
+<td>0.3 sy</td>
+<td>内核空间占用CPU百分比</td>
+</tr>
+<tr>
+<td>0.0 ni</td>
+<td>用户进程空间内改变过优先级的进程占用CPU百分比</td>
+</tr>
+<tr>
+<td>98.3 id</td>
+<td>空闲CPU百分比</td>
+</tr>
+</tbody>
+</table>
+<p>3.第四、五行为内存信息</p>
+<table>
+<thead>
+<tr>
+<th>KiB Mem :   997956 total</th>
+<th>物理内存总量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>62328 free</td>
+<td>空闲内存总量</td>
+</tr>
+<tr>
+<td>739828 used</td>
+<td>使用的物理内存总量</td>
+</tr>
+<tr>
+<td>195800 buff/cache</td>
+<td>用作内核缓存的内存量和free -k一个意思</td>
+</tr>
+<tr>
+<td>KiB Swap:  2097148 total</td>
+<td>交换区总量</td>
+</tr>
+<tr>
+<td>1914364 free</td>
+<td>空闲交换区总量</td>
+</tr>
+<tr>
+<td>182784 used</td>
+<td>使用的交换区总量</td>
+</tr>
+<tr>
+<td>57860 avail Mem</td>
+<td>缓冲的交换区总量</td>
+</tr>
+</tbody>
+</table>
+<h2 id="进程信息"><a href="#进程信息" class="headerlink" title="进程信息"></a>进程信息</h2><table>
+<thead>
+<tr>
+<th>PID</th>
+<th>进程id</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USER</td>
+<td>进程所有者的用户名</td>
+</tr>
+<tr>
+<td>NI</td>
+<td>进程优先级，nice值。负值表示高优先级，正值表示低优先级</td>
+</tr>
+<tr>
+<td>RES</td>
+<td>实际使用内存大小</td>
+</tr>
+</tbody>
+</table>
+<p>top快捷键：</p>
+<p>默认3s刷新一次</p>
+<p>空格：立即刷新</p>
+<p>q退出</p>
+<p>M按内存排序</p>
+<p>P按CPU排序</p>
+<h2 id="kill命令"><a href="#kill命令" class="headerlink" title="kill命令"></a>kill命令</h2><p><code>kill -9 pid</code></p>
+<p>killall或plill 通过程序的名字，直接杀死所有进程</p>
+<h2 id="文件查找方法"><a href="#文件查找方法" class="headerlink" title="文件查找方法"></a>文件查找方法</h2><p>which：查看可执行文件的位置</p>
+<p>whereis：查看可执行文件的位置及相关文件</p>
+<p>locate：配合数据库缓存，快速查看文件位置</p>
+<p>find：实际搜寻硬盘查询文件名称</p>
+<p>grep：过滤</p>
+<h2 id="find搜索文件系统、实时搜索"><a href="#find搜索文件系统、实时搜索" class="headerlink" title="find搜索文件系统、实时搜索"></a>find搜索文件系统、实时搜索</h2><p>find [目录] [条件] [动作]</p>
+<p>不输入代表当前目录</p>
+<p>类型：-type（f 文件，d 目录，I 链接，p 管道，c 字符文件，b 快文件，s socket文件）</p>
+<p>名字：-name</p>
+<p>大小：-size    +NM大于兆           -NG小NGB</p>
+<p>时间： -mtime    -atime           -ctime</p>
+<h2 id="查看命令"><a href="#查看命令" class="headerlink" title="查看命令"></a>查看命令</h2><p>cat -s多个空行合并成一个空行显示</p>
+<p>cat -b加行号显示</p>
+<p>nl 加行号</p>
+<p><img src="/2019/07/18/linux/33.png" alt></p>
+<p><code>cp 源文件路径 目的路径 -i</code>覆盖时交互提示：</p>
+<p><img src="/2019/07/18/linux/34.png" alt></p>
+<p>touch创建一个已经存在的文件时，只更新时间戳</p>
+<p><img src="/2019/07/18/linux/35.png" alt></p>
+
+      
+    </div>
+    
+    
+    
+	
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.gif" alt="smallpotato 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+	<div>
+		
+		
+		
+	</div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Linux/" rel="tag"><i class="fa fa-tag"></i> Linux</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/13/用virtualbox安装centos/" rel="next" title="用virtualbox安装centos">
+                <i class="fa fa-chevron-left"></i> 用virtualbox安装centos
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MzA4MS8xOTYyNw"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+    
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/4.gif" alt="smallpotato">
+            
+              <p class="site-author-name" itemprop="name">smallpotato</p>
+              <p class="site-description motion-element" itemprop="description">There is no end to learning</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/smallpotatody" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+          
+        
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.shiyanlou.com/" title="实验楼" target="_blank">实验楼</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#终端"><span class="nav-number">1.</span> <span class="nav-text">终端</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux如何获得帮助？"><span class="nav-number">2.</span> <span class="nav-text">Linux如何获得帮助？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关机命令："><span class="nav-number">3.</span> <span class="nav-text">关机命令：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符操作："><span class="nav-number">4.</span> <span class="nav-text">字符操作：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#词操作"><span class="nav-number">5.</span> <span class="nav-text">词操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快操作"><span class="nav-number">6.</span> <span class="nav-text">快操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#v模式"><span class="nav-number">7.</span> <span class="nav-text">v模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linux文件系统由三部分组成：文件名，inode，block（真正存数据）"><span class="nav-number">8.</span> <span class="nav-text">linux文件系统由三部分组成：文件名，inode，block（真正存数据）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#inode的内容"><span class="nav-number">9.</span> <span class="nav-text">inode的内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#inode的大小"><span class="nav-number">10.</span> <span class="nav-text">inode的大小</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ext4文件系统比ext3文件系统强的方面："><span class="nav-number">11.</span> <span class="nav-text">ext4文件系统比ext3文件系统强的方面：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#转码"><span class="nav-number">12.</span> <span class="nav-text">转码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用户分类："><span class="nav-number">13.</span> <span class="nav-text">用户分类：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#组分类："><span class="nav-number">14.</span> <span class="nav-text">组分类：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#passwd中的伪用户："><span class="nav-number">15.</span> <span class="nav-text">passwd中的伪用户：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为多个用户输入初始密码"><span class="nav-number">16.</span> <span class="nav-text">为多个用户输入初始密码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux用户密码加密"><span class="nav-number">17.</span> <span class="nav-text">Linux用户密码加密</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#控制添加用户规则的文件"><span class="nav-number">18.</span> <span class="nav-text">控制添加用户规则的文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看用户信息相关命令："><span class="nav-number">19.</span> <span class="nav-text">查看用户信息相关命令：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用户切换"><span class="nav-number">20.</span> <span class="nav-text">用户切换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进入单用户找回root身份"><span class="nav-number">21.</span> <span class="nav-text">进入单用户找回root身份</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件基本权限-不适用于root"><span class="nav-number">22.</span> <span class="nav-text">文件基本权限(不适用于root)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改权限命令"><span class="nav-number">23.</span> <span class="nav-text">修改权限命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用数字表示权限"><span class="nav-number">24.</span> <span class="nav-text">使用数字表示权限</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chown"><span class="nav-number">25.</span> <span class="nav-text">chown</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊权限"><span class="nav-number">26.</span> <span class="nav-text">特殊权限</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tar命令"><span class="nav-number">27.</span> <span class="nav-text">tar命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#file命令"><span class="nav-number">28.</span> <span class="nav-text">file命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tar归档-压缩"><span class="nav-number">29.</span> <span class="nav-text">tar归档+压缩</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bz2-归档-压缩"><span class="nav-number">30.</span> <span class="nav-text">bz2 归档+压缩</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zip软件包解压缩命令"><span class="nav-number">31.</span> <span class="nav-text">zip软件包解压缩命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进程管理"><span class="nav-number">32.</span> <span class="nav-text">进程管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ps命令"><span class="nav-number">33.</span> <span class="nav-text">ps命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#top命令"><span class="nav-number">34.</span> <span class="nav-text">top命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进程信息"><span class="nav-number">35.</span> <span class="nav-text">进程信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#kill命令"><span class="nav-number">36.</span> <span class="nav-text">kill命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件查找方法"><span class="nav-number">37.</span> <span class="nav-text">文件查找方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#find搜索文件系统、实时搜索"><span class="nav-number">38.</span> <span class="nav-text">find搜索文件系统、实时搜索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看命令"><span class="nav-number">39.</span> <span class="nav-text">查看命令</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+  
+           <div>
+              <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="210" height="110" src="//music.163.com/outchain/player?type=2&id=446945324&auto=0&height=32"></iframe>
+           </div>
+           
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">smallpotato</span>
+  
+  
+  
+  
+</div>
+
+
+<!--
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+-->
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共80.6k字</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      本次访问人数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      本次访问总量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
