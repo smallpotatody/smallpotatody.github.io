@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://smallpotatody.github.io/"/>
-  <updated>2019-08-09T12:47:43.911Z</updated>
+  <updated>2019-09-20T01:05:33.388Z</updated>
   <id>https://smallpotatody.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>给国内访问Github加速</title>
+    <link href="https://smallpotatody.github.io/2019/09/20/%E7%BB%99%E5%9B%BD%E5%86%85%E8%AE%BF%E9%97%AEGithub%E5%8A%A0%E9%80%9F/"/>
+    <id>https://smallpotatody.github.io/2019/09/20/给国内访问Github加速/</id>
+    <published>2019-09-20T01:01:25.000Z</published>
+    <updated>2019-09-20T01:05:33.388Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="给国内访问Github加速"><a href="#给国内访问Github加速" class="headerlink" title="给国内访问Github加速"></a>给国内访问Github加速</h1><ol><li>获取GitHub官方CDN地址</li></ol><p><a href="https://www.ipaddress.com/" target="_blank" rel="noopener">https://www.ipaddress.com/</a></p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNDMwMDQzNC02ZTcxNWIxMDM2MjlkYTcxLnBuZw?x-oss-process=image/format,png" alt></p><p>分别查询三个链接的DNS解析地址</p><ul><li><p>github.com</p></li><li><p>assets-cdn.github.com</p></li><li><p>github.global.ssl.fastly.net</p></li></ul><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNDMwMDQzNC04OWRjODdmOGZjMDQ4ZjFiLnBuZw?x-oss-process=image/format,png" alt></p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNDMwMDQzNC0yZGMzYmE4ZjVmM2M5NTlhLnBuZw?x-oss-process=image/format,png" alt></p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNDMwMDQzNC0zZTBlN2U4NTllOGY0ODQyLnBuZw?x-oss-process=image/format,png" alt></p><p>记录查询到的IP地址</p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNDMwMDQzNC1jNjFhYTYyOThjZjYyMjY5LnBuZw?x-oss-process=image/format,png" alt></p><ol start="2"><li><p>修改系统Hosts文件</p><ul><li><p>打开系统hosts文件(需管理员权限)。</p></li><li><p>路径：C:\Windows\System32\drivers\etc\hosts</p></li></ul><p>在末尾添加三行记录并保存。(需管理员权限，注意IP地址与域名间需留有空格)</p></li></ol><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNDMwMDQzNC1hNTk2ZDAwZTU3Yjc5OWZiLnBuZw?x-oss-process=image/format,png" alt></p><ol start="3"><li><p>刷新系统DNS缓存</p><p>打开powershell（管理员身份）</p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNDMwMDQzNC03YjBkYmQ5YzMzOWIzZWU3LnBuZw?x-oss-process=image/format,png" alt></p><p>输入命令<code>ipconfig /flushdns</code>手动刷新系统DNS缓存</p></li></ol><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNDMwMDQzNC0yMzJmNTNkODhlODQ2ZDU2LnBuZw?x-oss-process=image/format,png" alt></p><p>到此就结束了对国内访问GitHub提速了，现在去试试吧。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;给国内访问Github加速&quot;&gt;&lt;a href=&quot;#给国内访问Github加速&quot; class=&quot;headerlink&quot; title=&quot;给国内访问Github加速&quot;&gt;&lt;/a&gt;给国内访问Github加速&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;获取GitHub官方CDN地址&lt;/li&gt;
+      
+    
+    </summary>
+    
+      <category term="GitHub" scheme="https://smallpotatody.github.io/categories/GitHub/"/>
+    
+    
+      <category term="software" scheme="https://smallpotatody.github.io/tags/software/"/>
+    
+  </entry>
   
   <entry>
     <title>嵌入式学习</title>
